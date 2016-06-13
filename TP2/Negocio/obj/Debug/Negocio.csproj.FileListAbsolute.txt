@@ -1,0 +1,5 @@
+C:\Users\R.Central\Documents\Visual Studio 2013\Projects\TP2\Negocio\bin\Debug\Negocio.dll
+C:\Users\R.Central\Documents\Visual Studio 2013\Projects\TP2\Negocio\bin\Debug\Negocio.pdb
+C:\Users\R.Central\Documents\Visual Studio 2013\Projects\TP2\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\R.Central\Documents\Visual Studio 2013\Projects\TP2\Negocio\obj\Debug\Negocio.dll
+C:\Users\R.Central\Documents\Visual Studio 2013\Projects\TP2\Negocio\obj\Debug\Negocio.pdb

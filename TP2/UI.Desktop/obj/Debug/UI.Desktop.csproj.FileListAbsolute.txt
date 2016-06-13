@@ -1,0 +1,92 @@
+C:\Users\R.Central\Documents\Visual Studio 2013\Projects\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe.config
+C:\Users\R.Central\Documents\Visual Studio 2013\Projects\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe
+C:\Users\R.Central\Documents\Visual Studio 2013\Projects\TP2\UI.Desktop\bin\Debug\UI.Desktop.pdb
+C:\Users\R.Central\Documents\Visual Studio 2013\Projects\TP2\UI.Desktop\obj\Debug\UI.Desktop.csprojResolveAssemblyReference.cache
+C:\Users\R.Central\Documents\Visual Studio 2013\Projects\TP2\UI.Desktop\obj\Debug\UI.Desktop.Properties.Resources.resources
+C:\Users\R.Central\Documents\Visual Studio 2013\Projects\TP2\UI.Desktop\obj\Debug\UI.Desktop.csproj.GenerateResource.Cache
+C:\Users\R.Central\Documents\Visual Studio 2013\Projects\TP2\UI.Desktop\obj\Debug\UI.Desktop.exe
+C:\Users\R.Central\Documents\Visual Studio 2013\Projects\TP2\UI.Desktop\obj\Debug\UI.Desktop.pdb
+C:\Users\Enrique\Desktop\Mis Docs\Facultad\NET\TP Integrador\Projects\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe.config
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U2.L2\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe.config
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U2.L2\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U2.L2\TP2\UI.Desktop\bin\Debug\UI.Desktop.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U2.L2\TP2\UI.Desktop\bin\Debug\Business.Entities.dll
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U2.L2\TP2\UI.Desktop\bin\Debug\Business.Entities.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U2.L2\TP2\UI.Desktop\obj\Debug\UI.Desktop.csprojResolveAssemblyReference.cache
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U2.L2\TP2\UI.Desktop\obj\Debug\UI.Desktop.Properties.Resources.resources
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U2.L2\TP2\UI.Desktop\obj\Debug\UI.Desktop.csproj.GenerateResource.Cache
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U2.L2\TP2\UI.Desktop\obj\Debug\UI.Desktop.exe
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U2.L2\TP2\UI.Desktop\obj\Debug\UI.Desktop.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U2.L2\TP2\UI.Desktop\bin\Debug\Data.Database.dll
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U2.L2\TP2\UI.Desktop\bin\Debug\Data.Database.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U2.L2\TP2\UI.Desktop\bin\Debug\Business.Logic.dll
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U2.L2\TP2\UI.Desktop\bin\Debug\Business.Logic.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe.config
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)\TP2\UI.Desktop\obj\Debug\UI.Desktop.exe
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)\TP2\UI.Desktop\obj\Debug\UI.Desktop.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)\TP2\UI.Desktop\bin\Debug\UI.Desktop.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)\TP2\UI.Desktop\bin\Debug\Business.Entities.dll
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)\TP2\UI.Desktop\bin\Debug\Business.Logic.dll
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)\TP2\UI.Desktop\bin\Debug\Data.Database.dll
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)\TP2\UI.Desktop\bin\Debug\Business.Entities.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)\TP2\UI.Desktop\bin\Debug\Business.Logic.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)\TP2\UI.Desktop\bin\Debug\Data.Database.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)\TP2\UI.Desktop\obj\Debug\UI.Desktop.csprojResolveAssemblyReference.cache
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)\TP2\UI.Desktop\obj\Debug\UI.Desktop.Properties.Resources.resources
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)\TP2\UI.Desktop\obj\Debug\UI.Desktop.csproj.GenerateResource.Cache
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)\TP2\UI.Desktop\obj\Debug\UI.Desktop.Usuarios.resources
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)(Con Login)\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe.config
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)(Con Login)\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)(Con Login)\TP2\UI.Desktop\bin\Debug\UI.Desktop.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)(Con Login)\TP2\UI.Desktop\bin\Debug\Business.Entities.dll
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)(Con Login)\TP2\UI.Desktop\bin\Debug\Business.Logic.dll
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)(Con Login)\TP2\UI.Desktop\bin\Debug\Data.Database.dll
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)(Con Login)\TP2\UI.Desktop\bin\Debug\Business.Entities.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)(Con Login)\TP2\UI.Desktop\bin\Debug\Business.Logic.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)(Con Login)\TP2\UI.Desktop\bin\Debug\Data.Database.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)(Con Login)\TP2\UI.Desktop\obj\Debug\UI.Desktop.csprojResolveAssemblyReference.cache
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)(Con Login)\TP2\UI.Desktop\obj\Debug\UI.Desktop.Usuarios.resources
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)(Con Login)\TP2\UI.Desktop\obj\Debug\UI.Desktop.Properties.Resources.resources
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)(Con Login)\TP2\UI.Desktop\obj\Debug\UI.Desktop.csproj.GenerateResource.Cache
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)(Con Login)\TP2\UI.Desktop\obj\Debug\UI.Desktop.exe
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)(Con Login)\TP2\UI.Desktop\obj\Debug\UI.Desktop.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)(Con Login)\TP2\UI.Desktop\obj\Debug\UI.Desktop.UsuarioDesktop.resources
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)(Con Login) OK\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe.config
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)(Con Login) OK\TP2\UI.Desktop\obj\Debug\UI.Desktop.exe
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U3.L4)(Con Login) OK\TP2\UI.Desktop\obj\Debug\UI.Desktop.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U4.L5)\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe.config
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U4.L5)\TP2\UI.Desktop\obj\Debug\UI.Desktop.exe
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U4.L5)\TP2\UI.Desktop\obj\Debug\UI.Desktop.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U4.L5)\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U4.L5)\TP2\UI.Desktop\bin\Debug\UI.Desktop.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U4.L5)\TP2\UI.Desktop\bin\Debug\Business.Entities.dll
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U4.L5)\TP2\UI.Desktop\bin\Debug\Business.Logic.dll
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U4.L5)\TP2\UI.Desktop\bin\Debug\Data.Database.dll
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U4.L5)\TP2\UI.Desktop\bin\Debug\Business.Entities.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U4.L5)\TP2\UI.Desktop\bin\Debug\Business.Logic.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U4.L5)\TP2\UI.Desktop\bin\Debug\Data.Database.pdb
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U4.L5)\TP2\UI.Desktop\obj\Debug\UI.Desktop.csprojResolveAssemblyReference.cache
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U4.L5)\TP2\UI.Desktop\obj\Debug\UI.Desktop.UsuarioDesktop.resources
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U4.L5)\TP2\UI.Desktop\obj\Debug\UI.Desktop.Usuarios.resources
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U4.L5)\TP2\UI.Desktop\obj\Debug\UI.Desktop.Properties.Resources.resources
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U4.L5)\TP2\UI.Desktop\obj\Debug\UI.Desktop.csproj.GenerateResource.Cache
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe.config
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Desktop\obj\Debug\UI.Desktop.exe
+C:\Users\Enrique\Desktop\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Desktop\obj\Debug\UI.Desktop.pdb
+I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe.config
+I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Desktop\obj\Debug\UI.Desktop.exe
+I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Desktop\obj\Debug\UI.Desktop.pdb
+I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe
+I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Desktop\bin\Debug\UI.Desktop.pdb
+I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Desktop\bin\Debug\Business.Entities.dll
+I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Desktop\bin\Debug\Business.Logic.dll
+I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Desktop\bin\Debug\Data.Database.dll
+I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Desktop\bin\Debug\Business.Entities.pdb
+I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Desktop\bin\Debug\Business.Logic.pdb
+I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Desktop\bin\Debug\Data.Database.pdb
+I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Desktop\obj\Debug\UI.Desktop.csprojResolveAssemblyReference.cache
+I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Desktop\obj\Debug\UI.Desktop.UsuarioDesktop.resources
+I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Desktop\obj\Debug\UI.Desktop.Usuarios.resources
+I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Desktop\obj\Debug\UI.Desktop.Properties.Resources.resources
+I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Desktop\obj\Debug\UI.Desktop.csproj.GenerateResource.Cache
