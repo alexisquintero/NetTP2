@@ -43,3 +43,6 @@ J:\TP2\Negocio\bin\Debug\Data.Database.pdb
 J:\TP2\Negocio\obj\Debug\Business.Logic.csprojResolveAssemblyReference.cache
 J:\TP2\Negocio\obj\Debug\Business.Logic.dll
 J:\TP2\Negocio\obj\Debug\Business.Logic.pdb
+J:\NetTP2\TP2\Negocio\obj\Debug\Business.Logic.csprojResolveAssemblyReference.cache
+J:\NetTP2\TP2\Negocio\obj\Debug\Business.Logic.dll
+J:\NetTP2\TP2\Negocio\obj\Debug\Business.Logic.pdb

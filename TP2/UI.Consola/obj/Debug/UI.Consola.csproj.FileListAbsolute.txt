@@ -49,3 +49,15 @@ E:\Alumnos\Net\NetTP2-master\TP2\UI.Consola\bin\Debug\Data.Database.pdb
 E:\Alumnos\Net\NetTP2-master\TP2\UI.Consola\obj\Debug\UI.Consola.csprojResolveAssemblyReference.cache
 E:\Alumnos\Net\NetTP2-master\TP2\UI.Consola\obj\Debug\UI.Consola.exe
 E:\Alumnos\Net\NetTP2-master\TP2\UI.Consola\obj\Debug\UI.Consola.pdb
+J:\NetTP2\TP2\UI.Consola\bin\Debug\UI.Consola.exe.config
+J:\NetTP2\TP2\UI.Consola\bin\Debug\UI.Consola.exe
+J:\NetTP2\TP2\UI.Consola\bin\Debug\UI.Consola.pdb
+J:\NetTP2\TP2\UI.Consola\bin\Debug\Business.Entities.dll
+J:\NetTP2\TP2\UI.Consola\bin\Debug\Business.Logic.dll
+J:\NetTP2\TP2\UI.Consola\bin\Debug\Data.Database.dll
+J:\NetTP2\TP2\UI.Consola\bin\Debug\Business.Entities.pdb
+J:\NetTP2\TP2\UI.Consola\bin\Debug\Business.Logic.pdb
+J:\NetTP2\TP2\UI.Consola\bin\Debug\Data.Database.pdb
+J:\NetTP2\TP2\UI.Consola\obj\Debug\UI.Consola.csprojResolveAssemblyReference.cache
+J:\NetTP2\TP2\UI.Consola\obj\Debug\UI.Consola.exe
+J:\NetTP2\TP2\UI.Consola\obj\Debug\UI.Consola.pdb

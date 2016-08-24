@@ -18,3 +18,8 @@ E:\Alumnos\Net\NetTP2-master\TP2\Util\bin\Debug\Util.pdb
 E:\Alumnos\Net\NetTP2-master\TP2\Util\obj\Debug\Util.csprojResolveAssemblyReference.cache
 E:\Alumnos\Net\NetTP2-master\TP2\Util\obj\Debug\Util.dll
 E:\Alumnos\Net\NetTP2-master\TP2\Util\obj\Debug\Util.pdb
+J:\NetTP2\TP2\Util\bin\Debug\Util.dll
+J:\NetTP2\TP2\Util\bin\Debug\Util.pdb
+J:\NetTP2\TP2\Util\obj\Debug\Util.csprojResolveAssemblyReference.cache
+J:\NetTP2\TP2\Util\obj\Debug\Util.dll
+J:\NetTP2\TP2\Util\obj\Debug\Util.pdb

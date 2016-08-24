@@ -34,3 +34,15 @@ J:\TP2\UI.Web\bin\Data.Database.pdb
 J:\TP2\UI.Web\obj\Debug\UI.Web.csprojResolveAssemblyReference.cache
 J:\TP2\UI.Web\obj\Debug\UI.Web.dll
 J:\TP2\UI.Web\obj\Debug\UI.Web.pdb
+J:\NetTP2\TP2\UI.Web\bin\UI.Web.dll.config
+J:\NetTP2\TP2\UI.Web\bin\UI.Web.dll
+J:\NetTP2\TP2\UI.Web\bin\UI.Web.pdb
+J:\NetTP2\TP2\UI.Web\bin\Business.Entities.dll
+J:\NetTP2\TP2\UI.Web\bin\Business.Logic.dll
+J:\NetTP2\TP2\UI.Web\bin\Data.Database.dll
+J:\NetTP2\TP2\UI.Web\bin\Business.Entities.pdb
+J:\NetTP2\TP2\UI.Web\bin\Business.Logic.pdb
+J:\NetTP2\TP2\UI.Web\bin\Data.Database.pdb
+J:\NetTP2\TP2\UI.Web\obj\Debug\UI.Web.csprojResolveAssemblyReference.cache
+J:\NetTP2\TP2\UI.Web\obj\Debug\UI.Web.dll
+J:\NetTP2\TP2\UI.Web\obj\Debug\UI.Web.pdb

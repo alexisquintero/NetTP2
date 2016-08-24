@@ -34,3 +34,6 @@ J:\TP2\Data.Database\bin\Debug\Business.Entities.pdb
 J:\TP2\Data.Database\obj\Debug\Data.Database.csprojResolveAssemblyReference.cache
 J:\TP2\Data.Database\obj\Debug\Data.Database.dll
 J:\TP2\Data.Database\obj\Debug\Data.Database.pdb
+J:\NetTP2\TP2\Data.Database\obj\Debug\Data.Database.csprojResolveAssemblyReference.cache
+J:\NetTP2\TP2\Data.Database\obj\Debug\Data.Database.dll
+J:\NetTP2\TP2\Data.Database\obj\Debug\Data.Database.pdb
