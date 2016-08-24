@@ -13,3 +13,8 @@ I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\Util\bin\Debug\Util.pdb
 I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\Util\obj\Debug\Util.csprojResolveAssemblyReference.cache
 I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\Util\obj\Debug\Util.dll
 I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\Util\obj\Debug\Util.pdb
+E:\Alumnos\Net\NetTP2-master\TP2\Util\bin\Debug\Util.dll
+E:\Alumnos\Net\NetTP2-master\TP2\Util\bin\Debug\Util.pdb
+E:\Alumnos\Net\NetTP2-master\TP2\Util\obj\Debug\Util.csprojResolveAssemblyReference.cache
+E:\Alumnos\Net\NetTP2-master\TP2\Util\obj\Debug\Util.dll
+E:\Alumnos\Net\NetTP2-master\TP2\Util\obj\Debug\Util.pdb

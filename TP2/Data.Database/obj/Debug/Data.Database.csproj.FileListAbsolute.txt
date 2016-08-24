@@ -20,3 +20,17 @@ I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\Data.Database\bin\Debug\Business.Entities.
 I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\Data.Database\obj\Debug\Data.Database.csprojResolveAssemblyReference.cache
 I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\Data.Database\obj\Debug\Data.Database.dll
 I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\Data.Database\obj\Debug\Data.Database.pdb
+E:\Alumnos\Net\NetTP2-master\TP2\Data.Database\bin\Debug\Data.Database.dll
+E:\Alumnos\Net\NetTP2-master\TP2\Data.Database\bin\Debug\Data.Database.pdb
+E:\Alumnos\Net\NetTP2-master\TP2\Data.Database\bin\Debug\Business.Entities.dll
+E:\Alumnos\Net\NetTP2-master\TP2\Data.Database\bin\Debug\Business.Entities.pdb
+E:\Alumnos\Net\NetTP2-master\TP2\Data.Database\obj\Debug\Data.Database.csprojResolveAssemblyReference.cache
+E:\Alumnos\Net\NetTP2-master\TP2\Data.Database\obj\Debug\Data.Database.dll
+E:\Alumnos\Net\NetTP2-master\TP2\Data.Database\obj\Debug\Data.Database.pdb
+J:\TP2\Data.Database\bin\Debug\Data.Database.dll
+J:\TP2\Data.Database\bin\Debug\Data.Database.pdb
+J:\TP2\Data.Database\bin\Debug\Business.Entities.dll
+J:\TP2\Data.Database\bin\Debug\Business.Entities.pdb
+J:\TP2\Data.Database\obj\Debug\Data.Database.csprojResolveAssemblyReference.cache
+J:\TP2\Data.Database\obj\Debug\Data.Database.dll
+J:\TP2\Data.Database\obj\Debug\Data.Database.pdb
