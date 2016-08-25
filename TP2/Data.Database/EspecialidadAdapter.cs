@@ -59,7 +59,7 @@ namespace Data.Database
             }
             catch(Exception Ex)
             {
-                Exception ExcepcionManejada = new Exception("Error al recuperar datos de usuario", Ex);
+                Exception ExcepcionManejada = new Exception("Error al recuperar datos del plan", Ex);
                 throw ExcepcionManejada;
             }
             finally
@@ -117,7 +117,7 @@ namespace Data.Database
             }
             catch(Exception Ex)
             {
-                Exception ExcepcionManejada = new Exception("Error al crear usuario", Ex);
+                Exception ExcepcionManejada = new Exception("Error al crear especialidad", Ex);
                 throw ExcepcionManejada;
             }
             finally
