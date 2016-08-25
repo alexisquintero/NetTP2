@@ -111,7 +111,7 @@ namespace Data.Database
         {
             try
             {
-                SqlCommand cmdSave = new SqlCommand("INSERT INTO especialidades(desc_especialidad) VALUES (@desc) select @@identity", SqlConn);
+                SqlCommand cmdSave = new SqlCommand("INSERT INTO especialidades(desc_especialidad) VALUES (@desc) SELECT @@identity", SqlConn);
                 cmdSave.Parameters.Add("@desc", SqlDbType.VarChar, 50).Value = especialidad.Descripcion;
                 especialidad.ID = Decimal.ToInt32((decimal)cmdSave.ExecuteScalar());
             }

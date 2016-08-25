@@ -126,12 +126,11 @@ namespace Data.Database
                 this.OpenConnection();
                 SqlCommand cmdSave = new SqlCommand("INSERT INTO materias(desc_materia, hs_semanales, " +
                     "hs_totales, id_plan) VALUES (@desc, @hs_s, @hs_t, @id_pln) " +
-                    "SELECT @@entity", SqlConn);
+                    "SELECT @@identity", SqlConn);
                 cmdSave.Parameters.Add("@desc", SqlDbType.VarChar, 50).Value = materia.Descripcion;
                 cmdSave.Parameters.Add("@hs_s", SqlDbType.Int).Value = materia.HSSemanales;
                 cmdSave.Parameters.Add("@hs_t", SqlDbType.Int).Value = materia.HSTotales;
                 cmdSave.Parameters.Add("@id_pln", SqlDbType.Int).Value = materia.IDPlan;
-                cmdSave.Parameters.Add("@id", SqlDbType.Int).Value = materia.ID;
                 materia.ID = Decimal.ToInt32((decimal)cmdSave.ExecuteScalar());
             }
             catch(Exception Ex)

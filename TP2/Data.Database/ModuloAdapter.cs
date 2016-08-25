@@ -118,7 +118,7 @@ namespace Data.Database
             {
                 this.OpenConnection();
                 SqlCommand cmdSave = new SqlCommand("INSERT INTO modulos(desc_modulo) VALUES " +
-                    "(@desc) SELECT @@identuty", SqlConn);
+                    "(@desc) SELECT @@identity", SqlConn);
                 cmdSave.Parameters.Add("@desc", SqlDbType.VarChar, 50).Value = modulo.Descripcion;
                 modulo.ID = decimal.ToInt32((decimal)cmdSave.ExecuteScalar());
             }
