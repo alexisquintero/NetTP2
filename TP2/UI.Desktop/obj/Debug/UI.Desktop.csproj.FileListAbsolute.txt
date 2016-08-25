@@ -124,3 +124,6 @@ J:\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.Properties.Resources.resources
 J:\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.csproj.GenerateResource.Cache
 J:\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.Especialidad.resources
 J:\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.EspecialidadDesktop.resources
+I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\bin\Debug\UI.Desktop.exe.config
+I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.exe
+I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.pdb
