@@ -13,3 +13,17 @@ I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\Business.Entities\bin\Debug\Business.Entit
 I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\Business.Entities\obj\Debug\Business.Entities.csprojResolveAssemblyReference.cache
 I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\Business.Entities\obj\Debug\Business.Entities.dll
 I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\Business.Entities\obj\Debug\Business.Entities.pdb
+E:\Alumnos\Net\NetTP2-master\TP2\Business.Entities\bin\Debug\Business.Entities.dll
+E:\Alumnos\Net\NetTP2-master\TP2\Business.Entities\bin\Debug\Business.Entities.pdb
+E:\Alumnos\Net\NetTP2-master\TP2\Business.Entities\obj\Debug\Business.Entities.dll
+E:\Alumnos\Net\NetTP2-master\TP2\Business.Entities\obj\Debug\Business.Entities.pdb
+J:\TP2\Business.Entities\bin\Debug\Business.Entities.dll
+J:\TP2\Business.Entities\bin\Debug\Business.Entities.pdb
+J:\TP2\Business.Entities\obj\Debug\Business.Entities.csprojResolveAssemblyReference.cache
+J:\TP2\Business.Entities\obj\Debug\Business.Entities.dll
+J:\TP2\Business.Entities\obj\Debug\Business.Entities.pdb
+J:\NetTP2\TP2\Business.Entities\bin\Debug\Business.Entities.dll
+J:\NetTP2\TP2\Business.Entities\bin\Debug\Business.Entities.pdb
+J:\NetTP2\TP2\Business.Entities\obj\Debug\Business.Entities.csprojResolveAssemblyReference.cache
+J:\NetTP2\TP2\Business.Entities\obj\Debug\Business.Entities.dll
+J:\NetTP2\TP2\Business.Entities\obj\Debug\Business.Entities.pdb

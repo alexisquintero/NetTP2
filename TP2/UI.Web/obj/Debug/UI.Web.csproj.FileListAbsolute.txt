@@ -10,3 +10,39 @@ I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Web\bin\Data.Database.dll
 I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Web\bin\Business.Entities.pdb
 I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Web\bin\Business.Logic.pdb
 I:\UTN\Net\TP2 - 2016\TP2 (U5.L6)\TP2\UI.Web\bin\Data.Database.pdb
+E:\Alumnos\Net\NetTP2-master\TP2\UI.Web\bin\UI.Web.dll.config
+E:\Alumnos\Net\NetTP2-master\TP2\UI.Web\bin\UI.Web.dll
+E:\Alumnos\Net\NetTP2-master\TP2\UI.Web\bin\UI.Web.pdb
+E:\Alumnos\Net\NetTP2-master\TP2\UI.Web\bin\Business.Entities.dll
+E:\Alumnos\Net\NetTP2-master\TP2\UI.Web\bin\Business.Logic.dll
+E:\Alumnos\Net\NetTP2-master\TP2\UI.Web\bin\Data.Database.dll
+E:\Alumnos\Net\NetTP2-master\TP2\UI.Web\bin\Business.Entities.pdb
+E:\Alumnos\Net\NetTP2-master\TP2\UI.Web\bin\Business.Logic.pdb
+E:\Alumnos\Net\NetTP2-master\TP2\UI.Web\bin\Data.Database.pdb
+E:\Alumnos\Net\NetTP2-master\TP2\UI.Web\obj\Debug\UI.Web.csprojResolveAssemblyReference.cache
+E:\Alumnos\Net\NetTP2-master\TP2\UI.Web\obj\Debug\UI.Web.dll
+E:\Alumnos\Net\NetTP2-master\TP2\UI.Web\obj\Debug\UI.Web.pdb
+J:\TP2\UI.Web\bin\UI.Web.dll.config
+J:\TP2\UI.Web\bin\UI.Web.dll
+J:\TP2\UI.Web\bin\UI.Web.pdb
+J:\TP2\UI.Web\bin\Business.Entities.dll
+J:\TP2\UI.Web\bin\Business.Logic.dll
+J:\TP2\UI.Web\bin\Data.Database.dll
+J:\TP2\UI.Web\bin\Business.Entities.pdb
+J:\TP2\UI.Web\bin\Business.Logic.pdb
+J:\TP2\UI.Web\bin\Data.Database.pdb
+J:\TP2\UI.Web\obj\Debug\UI.Web.csprojResolveAssemblyReference.cache
+J:\TP2\UI.Web\obj\Debug\UI.Web.dll
+J:\TP2\UI.Web\obj\Debug\UI.Web.pdb
+J:\NetTP2\TP2\UI.Web\bin\UI.Web.dll.config
+J:\NetTP2\TP2\UI.Web\bin\UI.Web.dll
+J:\NetTP2\TP2\UI.Web\bin\UI.Web.pdb
+J:\NetTP2\TP2\UI.Web\bin\Business.Entities.dll
+J:\NetTP2\TP2\UI.Web\bin\Business.Logic.dll
+J:\NetTP2\TP2\UI.Web\bin\Data.Database.dll
+J:\NetTP2\TP2\UI.Web\bin\Business.Entities.pdb
+J:\NetTP2\TP2\UI.Web\bin\Business.Logic.pdb
+J:\NetTP2\TP2\UI.Web\bin\Data.Database.pdb
+J:\NetTP2\TP2\UI.Web\obj\Debug\UI.Web.csprojResolveAssemblyReference.cache
+J:\NetTP2\TP2\UI.Web\obj\Debug\UI.Web.dll
+J:\NetTP2\TP2\UI.Web\obj\Debug\UI.Web.pdb
