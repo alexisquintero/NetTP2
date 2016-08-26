@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Business.Entities
 {
-    class Personas : BusinessEntity
+    public class Personas : BusinessEntity
     {
+        public enum TiposPersonas { };
 
         private string _Apellido;
         public string Apellido
@@ -61,5 +62,7 @@ namespace Business.Entities
             get { return _Telefono; }
             set { _Telefono = value; }
         }
+
+        public TiposPersonas TipoPersona { get; set; }
     }
 }
