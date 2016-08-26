@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Business.Entities
 {
-    class ModuloUsuario : BusinessEntity
+    public class ModuloUsuario : BusinessEntity
     {
         private int _IDModulo;
         public int IDModulo
@@ -21,5 +21,10 @@ namespace Business.Entities
             get { return _IDUsuario; }
             set { _IDUsuario = value; }
         }
+
+        public bool permiteAlta { get; set; }
+        public bool permiteBaja { get; set; }
+        public bool permiteConsulta { get; set; }
+        public bool permiteModificacion { get; set; }
     }
 }
