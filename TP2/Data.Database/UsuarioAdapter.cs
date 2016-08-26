@@ -192,7 +192,7 @@ namespace Data.Database
                     "INSERT INTO usuarios(nombre_usuario,clave,habilitado,nombre,apellido,email)" +
                 "VALUES (@nombre_usuario,@clave,@habilitado,@nombre,@apellido,@email)" +
                 "SELECT @@identity", SqlConn);
-                cmdSave.Parameters.Add("@id", SqlDbType.Int).Value = usuario.ID;
+       //         cmdSave.Parameters.Add("@id", SqlDbType.Int).Value = usuario.ID;
                 cmdSave.Parameters.Add("@nombre_usuario", SqlDbType.VarChar, 50).Value = usuario.NombreUsuario;
                 cmdSave.Parameters.Add("@clave", SqlDbType.VarChar, 50).Value = usuario.Clave;
                 cmdSave.Parameters.Add("@habilitado", SqlDbType.Bit).Value = usuario.Habilitado;
