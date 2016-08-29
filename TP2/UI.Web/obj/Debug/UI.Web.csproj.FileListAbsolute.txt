@@ -46,3 +46,15 @@ J:\NetTP2\TP2\UI.Web\bin\Data.Database.pdb
 J:\NetTP2\TP2\UI.Web\obj\Debug\UI.Web.csprojResolveAssemblyReference.cache
 J:\NetTP2\TP2\UI.Web\obj\Debug\UI.Web.dll
 J:\NetTP2\TP2\UI.Web\obj\Debug\UI.Web.pdb
+I:\UTN\Net\tp\NetTP2\TP2\UI.Web\obj\Debug\UI.Web.csprojResolveAssemblyReference.cache
+I:\UTN\Net\tp\NetTP2\TP2\UI.Web\obj\Debug\UI.Web.dll
+I:\UTN\Net\tp\NetTP2\TP2\UI.Web\obj\Debug\UI.Web.pdb
+I:\UTN\Net\tp\NetTP2\TP2\UI.Web\bin\UI.Web.dll.config
+I:\UTN\Net\tp\NetTP2\TP2\UI.Web\bin\UI.Web.dll
+I:\UTN\Net\tp\NetTP2\TP2\UI.Web\bin\UI.Web.pdb
+I:\UTN\Net\tp\NetTP2\TP2\UI.Web\bin\Business.Entities.dll
+I:\UTN\Net\tp\NetTP2\TP2\UI.Web\bin\Business.Logic.dll
+I:\UTN\Net\tp\NetTP2\TP2\UI.Web\bin\Data.Database.dll
+I:\UTN\Net\tp\NetTP2\TP2\UI.Web\bin\Business.Entities.pdb
+I:\UTN\Net\tp\NetTP2\TP2\UI.Web\bin\Business.Logic.pdb
+I:\UTN\Net\tp\NetTP2\TP2\UI.Web\bin\Data.Database.pdb

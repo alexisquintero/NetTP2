@@ -37,3 +37,10 @@ J:\TP2\Data.Database\obj\Debug\Data.Database.pdb
 J:\NetTP2\TP2\Data.Database\obj\Debug\Data.Database.csprojResolveAssemblyReference.cache
 J:\NetTP2\TP2\Data.Database\obj\Debug\Data.Database.dll
 J:\NetTP2\TP2\Data.Database\obj\Debug\Data.Database.pdb
+I:\UTN\Net\tp\NetTP2\TP2\Data.Database\bin\Debug\Data.Database.dll
+I:\UTN\Net\tp\NetTP2\TP2\Data.Database\bin\Debug\Data.Database.pdb
+I:\UTN\Net\tp\NetTP2\TP2\Data.Database\bin\Debug\Business.Entities.dll
+I:\UTN\Net\tp\NetTP2\TP2\Data.Database\bin\Debug\Business.Entities.pdb
+I:\UTN\Net\tp\NetTP2\TP2\Data.Database\obj\Debug\Data.Database.csprojResolveAssemblyReference.cache
+I:\UTN\Net\tp\NetTP2\TP2\Data.Database\obj\Debug\Data.Database.dll
+I:\UTN\Net\tp\NetTP2\TP2\Data.Database\obj\Debug\Data.Database.pdb

@@ -46,3 +46,12 @@ J:\TP2\Negocio\obj\Debug\Business.Logic.pdb
 J:\NetTP2\TP2\Negocio\obj\Debug\Business.Logic.csprojResolveAssemblyReference.cache
 J:\NetTP2\TP2\Negocio\obj\Debug\Business.Logic.dll
 J:\NetTP2\TP2\Negocio\obj\Debug\Business.Logic.pdb
+I:\UTN\Net\tp\NetTP2\TP2\Negocio\bin\Debug\Business.Logic.dll
+I:\UTN\Net\tp\NetTP2\TP2\Negocio\bin\Debug\Business.Logic.pdb
+I:\UTN\Net\tp\NetTP2\TP2\Negocio\bin\Debug\Business.Entities.dll
+I:\UTN\Net\tp\NetTP2\TP2\Negocio\bin\Debug\Data.Database.dll
+I:\UTN\Net\tp\NetTP2\TP2\Negocio\bin\Debug\Business.Entities.pdb
+I:\UTN\Net\tp\NetTP2\TP2\Negocio\bin\Debug\Data.Database.pdb
+I:\UTN\Net\tp\NetTP2\TP2\Negocio\obj\Debug\Business.Logic.csprojResolveAssemblyReference.cache
+I:\UTN\Net\tp\NetTP2\TP2\Negocio\obj\Debug\Business.Logic.dll
+I:\UTN\Net\tp\NetTP2\TP2\Negocio\obj\Debug\Business.Logic.pdb
