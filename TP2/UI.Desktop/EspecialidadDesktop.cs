@@ -48,15 +48,15 @@ namespace UI.Desktop
                 this.btnAceptar.Text = "Aceptar";
             }
         }
-        public virtual void MapearADatos()
+        public override void MapearADatos()
         {
 
         }
-        public virtual void GuardarCambios()
+        public override void GuardarCambios()
         {
 
         }
-        public virtual bool Validar()
+        public override bool Validar()
         {
             return false;
         }
