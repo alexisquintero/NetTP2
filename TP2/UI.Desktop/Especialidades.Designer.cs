@@ -1,6 +1,6 @@
 ﻿namespace UI.Desktop
 {
-    partial class Especialidad
+    partial class Especialidades
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Especialidad));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Especialidades));
             this.tcEspecialidad = new System.Windows.Forms.ToolStripContainer();
             this.tsEspecialidad = new System.Windows.Forms.ToolStrip();
             this.tlEspecialidad = new System.Windows.Forms.TableLayoutPanel();

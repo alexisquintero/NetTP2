@@ -21,9 +21,9 @@ namespace Business.Logic
             return EspecialidadData.GetAll();
         }
 
-        public Especialidad GetOne(int iD)
+        public Especialidad GetOne(int ID)
         {
-            return EspecialidadData.GetOne(iD);
+            return EspecialidadData.GetOne(ID);
         }
     }
 }

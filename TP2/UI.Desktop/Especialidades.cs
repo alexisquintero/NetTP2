@@ -7,26 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Business.Entities;
+using Business.Logic;
 
 namespace UI.Desktop
 {
-    public partial class Menu : Form
+    public partial class Especialidades : Form
     {
-        public Menu()
+        public Especialidades()
         {
             InitializeComponent();
+            this.dgvEspecialidad.AutoGenerateColumns = false;
+        }
+        public void Listar()
+        {
+            EspecialidadLogic el = new EspecialidadLogic();
+            this.dgvEspecialidad.DataSource = el.GetAll();
         }
 
-        private void btnUsuario_Click(object sender, EventArgs e)
+        private void Especialidad_Load(object sender, EventArgs e)
         {
-            Usuarios usuarios = new Usuarios();
-            usuarios.ShowDialog();
-        }
-
-        private void btnEspecialidad_Click(object sender, EventArgs e)
-        {
-            Especialidades especialidad = new Especialidades();
-            especialidad.ShowDialog();
+            Listar();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

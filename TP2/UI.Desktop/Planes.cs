@@ -12,20 +12,25 @@ using Business.Logic;
 
 namespace UI.Desktop
 {
-    public partial class Especialidad : Form
+    public partial class Planes : Form
     {
-        public Especialidad()
+        public Planes()
         {
             InitializeComponent();
-            this.dgvEspecialidad.AutoGenerateColumns = false;
+            dgvPlanes.AutoGenerateColumns = false;
         }
         public void Listar()
         {
-            EspecialidadLogic el = new EspecialidadLogic();
-            this.dgvEspecialidad.DataSource = el.GetAll();
+            PlanLogic pl = new PlanLogic();
+            dgvPlanes.DataSource = pl.GetAll();
         }
 
-        private void Especialidad_Load(object sender, EventArgs e)
+        private void Planes_Load(object sender, EventArgs e)
+        {
+            Listar();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
         {
             Listar();
         }
