@@ -23,5 +23,13 @@ namespace Business.Logic
         {
             return MateriaData.GetOne(ID);
         }
+        public void Save(Materia mat)
+        {
+            MateriaData.Save(mat);
+        }
+        public void Delete(int ID)
+        {
+            MateriaData.Delete(ID);
+        }
     }
 }

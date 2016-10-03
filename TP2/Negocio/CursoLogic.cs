@@ -23,5 +23,13 @@ namespace Business.Logic
         {
             return CursoData.GetOne(ID);
         }
+        public void Save(Curso cur)
+        {
+            CursoData.Save(cur);
+        }
+        public void Delete(int ID)
+        {
+            CursoData.Delete(ID);
+        }
     }
 }

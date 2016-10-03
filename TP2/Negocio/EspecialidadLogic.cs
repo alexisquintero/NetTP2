@@ -25,5 +25,13 @@ namespace Business.Logic
         {
             return EspecialidadData.GetOne(ID);
         }
+        public void Save(Especialidad esp)
+        {
+            EspecialidadData.Save(esp);
+        }
+        public void Delete(int ID)
+        {
+            EspecialidadData.Delete(ID);
+        }
     }
 }

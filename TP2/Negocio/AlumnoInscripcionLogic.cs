@@ -23,5 +23,13 @@ namespace Business.Logic
         {
             return AlumnoInscripcionData.GetOne(ID);
         }
+        public void Save(AlumnoInscripcion ai)
+        {
+            AlumnoInscripcionData.Save(ai);
+        }
+        public void Delete(int ID)
+        {
+            AlumnoInscripcionData.Delete(ID);
+        }
     }
 }

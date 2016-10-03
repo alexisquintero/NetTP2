@@ -14,7 +14,6 @@ namespace Business.Logic
         public UsuarioLogic()
         {
             UsuarioData = new UsuarioAdapter();
-
         }
         public Business.Entities.Usuario GetOne(int ID)
         {
@@ -23,7 +22,6 @@ namespace Business.Logic
         public List<Usuario> GetAll()
         {
            return UsuarioData.GetAll();
-
         }
         public void Save(Business.Entities.Usuario Usr)
         {
@@ -32,8 +30,6 @@ namespace Business.Logic
         public void Delete(int ID)
         {
             UsuarioData.Delete(ID);
-
         }
-
     }
 }

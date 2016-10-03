@@ -23,5 +23,13 @@ namespace Business.Logic
         {
             return ModuloData.GetOne(ID);
         }
+        public void Save(Modulo mod)
+        {
+            ModuloData.Save(mod);
+        }
+        public void Delete(int ID)
+        {
+            ModuloData.Delete(ID);
+        }
     }
 }
