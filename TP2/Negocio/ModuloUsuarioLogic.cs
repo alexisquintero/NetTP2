@@ -8,10 +8,10 @@ using Business.Entities;
 
 namespace Business.Logic
 {
-    public class ModulosUsuariosLogic
+    public class ModuloUsuarioLogic
     {
         ModuloUsuarioAdapter ModulosUsuariosData;
-        public ModulosUsuariosLogic()
+        public ModuloUsuarioLogic()
         {
             ModulosUsuariosData = new ModuloUsuarioAdapter();
         }

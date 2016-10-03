@@ -7,25 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Business.Entities;
 using Business.Logic;
+using Business.Entities;
 
 namespace UI.Desktop
 {
-    public partial class ModulosUsuarios : Form
+    public partial class Modulos : Form
     {
-        public ModulosUsuarios()
+        public Modulos()
         {
             InitializeComponent();
-            dgvModulosUsuarios.AutoGenerateColumns = false;
+            dgvModulos.AutoGenerateColumns = false;
         }
         public void Listar()
         {
-            ModuloUsuarioLogic mul = new ModuloUsuarioLogic();
-            dgvModulosUsuarios.DataSource = mul.GetAll();
+            ModuloLogic ml = new ModuloLogic();
+            dgvModulos.DataSource = ml.GetAll();
         }
 
-        private void ModulosUsuarios_Load(object sender, EventArgs e)
+        private void Modulos_Load(object sender, EventArgs e)
         {
             Listar();
         }

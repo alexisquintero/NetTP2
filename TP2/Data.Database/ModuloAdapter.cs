@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace Data.Database
 {
-    class ModuloAdapter:Adapter
+    public class ModuloAdapter:Adapter
     {
         
         public List<Modulo> GetAll()

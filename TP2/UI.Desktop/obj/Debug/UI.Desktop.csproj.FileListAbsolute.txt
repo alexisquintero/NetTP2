@@ -144,3 +144,6 @@ I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\bin\Debug\Business.Logic.pdb
 I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\bin\Debug\Data.Database.pdb
 I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.Especialidades.resources
 I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.Planes.resources
+I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.Modulos.resources
+I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.ModulosUsuarios.resources
+I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.Personas.resources
