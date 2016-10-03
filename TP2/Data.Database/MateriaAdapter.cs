@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace Data.Database
 {
-    class MateriaAdapter:Adapter
+    public class MateriaAdapter:Adapter
     {
         public List<Materia> GetAll()
         {
