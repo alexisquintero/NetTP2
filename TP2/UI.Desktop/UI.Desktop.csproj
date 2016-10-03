@@ -65,6 +65,12 @@
     <Compile Include="ApplicationForm.Designer.cs">
       <DependentUpon>ApplicationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DocentesCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocentesCursos.Designer.cs">
+      <DependentUpon>DocentesCursos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Especialidades.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DocentesCursos.resx">
+      <DependentUpon>DocentesCursos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Especialidades.resx">
       <DependentUpon>Especialidades.cs</DependentUpon>
     </EmbeddedResource>
