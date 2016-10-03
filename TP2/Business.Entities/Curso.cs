@@ -8,11 +8,11 @@ namespace Business.Entities
 {
     public class Curso : BusinessEntity
     {
-        private int _AñoCalendario;
-        public int AñoCalendario
+        private int _AnioCalendario;
+        public int AnioCalendario
         {
-            get { return _AñoCalendario; }
-            set { _AñoCalendario = value; }
+            get { return _AnioCalendario; }
+            set { _AnioCalendario = value; }
         }
         private int _Cupo;
         public int Cupo
