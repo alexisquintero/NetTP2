@@ -14,7 +14,7 @@ namespace UI.Desktop
 {
     public partial class EspecialidadDesktop : ApplicationForm
     {
-        public Business.Entities.Especialidad EspecialidadActual;
+        public Especialidad EspecialidadActual { get; set; }
         public EspecialidadDesktop()
         {
             InitializeComponent();
@@ -22,19 +22,6 @@ namespace UI.Desktop
         public EspecialidadDesktop(ModoForm modo) : this()
         {
             this.Modo = modo;
-        }
-        public EspecialidadDesktop(int ID, ModoForm modo) : this()
-        {
-            this.Modo = modo;
-            EspecialidadLogic el = new EspecialidadLogic();
-            EspecialidadActual = el.GetOne(ID);
-            this.MapearADatos();
-        }
-        public override void MapearDeDatos()
-        {
-            this.txtID.Text = this.EspecialidadActual.ID.ToString();
-            this.txtDescripcion.Text = this.EspecialidadActual.Descripcion;
-
             if (Modo == ModoForm.Alta || Modo == ModoForm.Modificacion)
             {
                 this.btnAceptar.Text = "Guardar";
@@ -48,6 +35,18 @@ namespace UI.Desktop
                 this.btnAceptar.Text = "Aceptar";
             }
         }
+        public EspecialidadDesktop(int ID, ModoForm modo) : this()
+        {
+            this.Modo = modo;
+            EspecialidadLogic el = new EspecialidadLogic();
+            EspecialidadActual = el.GetOne(ID);
+            this.MapearADatos();
+        }
+        public override void MapearDeDatos()
+        {
+            this.txtID.Text = this.EspecialidadActual.ID.ToString();
+            this.txtDescripcion.Text = this.EspecialidadActual.Descripcion;           
+        }
         public override void MapearADatos()
         {
 
@@ -58,7 +57,21 @@ namespace UI.Desktop
         }
         public override bool Validar()
         {
-            return false;
+            bool valida = false;
+            string mensaje = "";
+            if(txtDescripcion.Text.Trim() == "")
+            {
+                mensaje += "La descripción no puede esta en blanco" + "\n";
+            }
+            if (!string.IsNullOrEmpty(mensaje))
+            {
+                this.Notificar(mensaje, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                valida = true;
+            }
+            return valida;
         }
     }
 }

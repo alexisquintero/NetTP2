@@ -49,10 +49,34 @@ namespace UI.Desktop
 
         private void tsbEditar_Click(object sender, EventArgs e)
         {
-            int ID = ((Business.Entities.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).ID;
-            
-            UsuarioDesktop formUsuario = new UsuarioDesktop(ID, ApplicationForm.ModoForm.Modificacion);
-            this.Listar();
+            if (dgvUsuarios.SelectedRows.Count > 0)
+            {
+                int ID = ((Business.Entities.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).ID;
+
+                UsuarioDesktop formUsuario = new UsuarioDesktop(ID, ApplicationForm.ModoForm.Modificacion);
+                formUsuario.ShowDialog();
+                this.Listar(); 
+            }
+            else
+            {
+                MessageBox.Show("No hay elementos seleccionados", "Error", MessageBoxButtons.OK);
+            }
+        }
+
+        private void tsbEliminar_Click(object sender, EventArgs e)
+        {
+            if (dgvUsuarios.SelectedRows.Count > 0)
+            {
+                int ID = ((Business.Entities.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).ID;
+
+                UsuarioDesktop formUsuario = new UsuarioDesktop(ID, ApplicationForm.ModoForm.Baja);
+                formUsuario.ShowDialog();
+                this.Listar();
+            }
+            else
+            {
+                MessageBox.Show("No hay elementos seleccionados", "Error", MessageBoxButtons.OK);
+            }
         }
     }
 }

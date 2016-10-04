@@ -30,23 +30,23 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Planes));
             this.tcPlanes = new System.Windows.Forms.ToolStripContainer();
-            this.tsPlanes = new System.Windows.Forms.ToolStrip();
             this.tlPlanes = new System.Windows.Forms.TableLayoutPanel();
             this.dgvPlanes = new System.Windows.Forms.DataGridView();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.tsPlanes = new System.Windows.Forms.ToolStrip();
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.tsbEditar = new System.Windows.Forms.ToolStripButton();
             this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
             this.tcPlanes.ContentPanel.SuspendLayout();
             this.tcPlanes.TopToolStripPanel.SuspendLayout();
             this.tcPlanes.SuspendLayout();
-            this.tsPlanes.SuspendLayout();
             this.tlPlanes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlanes)).BeginInit();
+            this.tsPlanes.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcPlanes
@@ -66,18 +66,6 @@
             // tcPlanes.TopToolStripPanel
             // 
             this.tcPlanes.TopToolStripPanel.Controls.Add(this.tsPlanes);
-            // 
-            // tsPlanes
-            // 
-            this.tsPlanes.Dock = System.Windows.Forms.DockStyle.None;
-            this.tsPlanes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbNuevo,
-            this.tsbEditar,
-            this.tsbEliminar});
-            this.tsPlanes.Location = new System.Drawing.Point(3, 0);
-            this.tsPlanes.Name = "tsPlanes";
-            this.tsPlanes.Size = new System.Drawing.Size(112, 25);
-            this.tsPlanes.TabIndex = 0;
             // 
             // tlPlanes
             // 
@@ -108,10 +96,33 @@
             this.tlPlanes.SetColumnSpan(this.dgvPlanes, 2);
             this.dgvPlanes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPlanes.Location = new System.Drawing.Point(3, 3);
+            this.dgvPlanes.MultiSelect = false;
             this.dgvPlanes.Name = "dgvPlanes";
             this.dgvPlanes.ReadOnly = true;
+            this.dgvPlanes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPlanes.Size = new System.Drawing.Size(667, 383);
             this.dgvPlanes.TabIndex = 0;
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "ID";
+            this.id.HeaderText = "ID";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            // 
+            // idEspecialidad
+            // 
+            this.idEspecialidad.DataPropertyName = "IDEspecialidad";
+            this.idEspecialidad.HeaderText = "ID Especialidad";
+            this.idEspecialidad.Name = "idEspecialidad";
+            this.idEspecialidad.ReadOnly = true;
+            // 
+            // descripcion
+            // 
+            this.descripcion.DataPropertyName = "Descripcion";
+            this.descripcion.HeaderText = "Descripcion";
+            this.descripcion.Name = "descripcion";
+            this.descripcion.ReadOnly = true;
             // 
             // btnActualizar
             // 
@@ -134,26 +145,17 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // id
+            // tsPlanes
             // 
-            this.id.DataPropertyName = "ID";
-            this.id.HeaderText = "ID";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            // 
-            // idEspecialidad
-            // 
-            this.idEspecialidad.DataPropertyName = "IDEspecialidad";
-            this.idEspecialidad.HeaderText = "ID Especialidad";
-            this.idEspecialidad.Name = "idEspecialidad";
-            this.idEspecialidad.ReadOnly = true;
-            // 
-            // descripcion
-            // 
-            this.descripcion.DataPropertyName = "Descripcion";
-            this.descripcion.HeaderText = "Descripcion";
-            this.descripcion.Name = "descripcion";
-            this.descripcion.ReadOnly = true;
+            this.tsPlanes.Dock = System.Windows.Forms.DockStyle.None;
+            this.tsPlanes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsbNuevo,
+            this.tsbEditar,
+            this.tsbEliminar});
+            this.tsPlanes.Location = new System.Drawing.Point(3, 0);
+            this.tsPlanes.Name = "tsPlanes";
+            this.tsPlanes.Size = new System.Drawing.Size(81, 25);
+            this.tsPlanes.TabIndex = 0;
             // 
             // tsbNuevo
             // 
@@ -196,10 +198,10 @@
             this.tcPlanes.TopToolStripPanel.PerformLayout();
             this.tcPlanes.ResumeLayout(false);
             this.tcPlanes.PerformLayout();
-            this.tsPlanes.ResumeLayout(false);
-            this.tsPlanes.PerformLayout();
             this.tlPlanes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlanes)).EndInit();
+            this.tsPlanes.ResumeLayout(false);
+            this.tsPlanes.PerformLayout();
             this.ResumeLayout(false);
 
         }

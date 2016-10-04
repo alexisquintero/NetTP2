@@ -30,24 +30,24 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Comisiones));
             this.tcComisiones = new System.Windows.Forms.ToolStripContainer();
-            this.tsComisiones = new System.Windows.Forms.ToolStrip();
             this.tlComisiones = new System.Windows.Forms.TableLayoutPanel();
             this.dgvComisiones = new System.Windows.Forms.DataGridView();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.anioEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idPlan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.tsComisiones = new System.Windows.Forms.ToolStrip();
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.tsbEditar = new System.Windows.Forms.ToolStripButton();
             this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
             this.tcComisiones.ContentPanel.SuspendLayout();
             this.tcComisiones.TopToolStripPanel.SuspendLayout();
             this.tcComisiones.SuspendLayout();
-            this.tsComisiones.SuspendLayout();
             this.tlComisiones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvComisiones)).BeginInit();
+            this.tsComisiones.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcComisiones
@@ -67,18 +67,6 @@
             // tcComisiones.TopToolStripPanel
             // 
             this.tcComisiones.TopToolStripPanel.Controls.Add(this.tsComisiones);
-            // 
-            // tsComisiones
-            // 
-            this.tsComisiones.Dock = System.Windows.Forms.DockStyle.None;
-            this.tsComisiones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbNuevo,
-            this.tsbEditar,
-            this.tsbEliminar});
-            this.tsComisiones.Location = new System.Drawing.Point(3, 0);
-            this.tsComisiones.Name = "tsComisiones";
-            this.tsComisiones.Size = new System.Drawing.Size(112, 25);
-            this.tsComisiones.TabIndex = 0;
             // 
             // tlComisiones
             // 
@@ -110,31 +98,12 @@
             this.tlComisiones.SetColumnSpan(this.dgvComisiones, 2);
             this.dgvComisiones.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvComisiones.Location = new System.Drawing.Point(3, 3);
+            this.dgvComisiones.MultiSelect = false;
             this.dgvComisiones.Name = "dgvComisiones";
             this.dgvComisiones.ReadOnly = true;
+            this.dgvComisiones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvComisiones.Size = new System.Drawing.Size(512, 377);
             this.dgvComisiones.TabIndex = 0;
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnActualizar.Location = new System.Drawing.Point(359, 386);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizar.TabIndex = 1;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(440, 386);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
-            this.btnSalir.TabIndex = 2;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // id
             // 
@@ -163,6 +132,39 @@
             this.idPlan.HeaderText = "ID Plan";
             this.idPlan.Name = "idPlan";
             this.idPlan.ReadOnly = true;
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnActualizar.Location = new System.Drawing.Point(359, 386);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.TabIndex = 1;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(440, 386);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 2;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // tsComisiones
+            // 
+            this.tsComisiones.Dock = System.Windows.Forms.DockStyle.None;
+            this.tsComisiones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsbNuevo,
+            this.tsbEditar,
+            this.tsbEliminar});
+            this.tsComisiones.Location = new System.Drawing.Point(3, 0);
+            this.tsComisiones.Name = "tsComisiones";
+            this.tsComisiones.Size = new System.Drawing.Size(81, 25);
+            this.tsComisiones.TabIndex = 0;
             // 
             // tsbNuevo
             // 
@@ -205,10 +207,10 @@
             this.tcComisiones.TopToolStripPanel.PerformLayout();
             this.tcComisiones.ResumeLayout(false);
             this.tcComisiones.PerformLayout();
-            this.tsComisiones.ResumeLayout(false);
-            this.tsComisiones.PerformLayout();
             this.tlComisiones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvComisiones)).EndInit();
+            this.tsComisiones.ResumeLayout(false);
+            this.tsComisiones.PerformLayout();
             this.ResumeLayout(false);
 
         }

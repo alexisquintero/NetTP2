@@ -30,11 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModulosUsuarios));
             this.tcModulosUsuarios = new System.Windows.Forms.ToolStripContainer();
-            this.tsModulosUsuarios = new System.Windows.Forms.ToolStrip();
             this.tlModulosUsuarios = new System.Windows.Forms.TableLayoutPanel();
             this.dgvModulosUsuarios = new System.Windows.Forms.DataGridView();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idmodulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idusuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,15 +39,18 @@
             this.permiteBaja = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.permiteConsulta = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.permiteModificacion = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.tsModulosUsuarios = new System.Windows.Forms.ToolStrip();
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.tsbEditar = new System.Windows.Forms.ToolStripButton();
             this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
             this.tcModulosUsuarios.ContentPanel.SuspendLayout();
             this.tcModulosUsuarios.TopToolStripPanel.SuspendLayout();
             this.tcModulosUsuarios.SuspendLayout();
-            this.tsModulosUsuarios.SuspendLayout();
             this.tlModulosUsuarios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvModulosUsuarios)).BeginInit();
+            this.tsModulosUsuarios.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcModulosUsuarios
@@ -70,18 +70,6 @@
             // tcModulosUsuarios.TopToolStripPanel
             // 
             this.tcModulosUsuarios.TopToolStripPanel.Controls.Add(this.tsModulosUsuarios);
-            // 
-            // tsModulosUsuarios
-            // 
-            this.tsModulosUsuarios.Dock = System.Windows.Forms.DockStyle.None;
-            this.tsModulosUsuarios.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbNuevo,
-            this.tsbEditar,
-            this.tsbEliminar});
-            this.tsModulosUsuarios.Location = new System.Drawing.Point(3, 0);
-            this.tsModulosUsuarios.Name = "tsModulosUsuarios";
-            this.tsModulosUsuarios.Size = new System.Drawing.Size(112, 25);
-            this.tsModulosUsuarios.TabIndex = 0;
             // 
             // tlModulosUsuarios
             // 
@@ -116,31 +104,12 @@
             this.tlModulosUsuarios.SetColumnSpan(this.dgvModulosUsuarios, 2);
             this.dgvModulosUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvModulosUsuarios.Location = new System.Drawing.Point(3, 3);
+            this.dgvModulosUsuarios.MultiSelect = false;
             this.dgvModulosUsuarios.Name = "dgvModulosUsuarios";
             this.dgvModulosUsuarios.ReadOnly = true;
+            this.dgvModulosUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvModulosUsuarios.Size = new System.Drawing.Size(574, 377);
             this.dgvModulosUsuarios.TabIndex = 0;
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnActualizar.Location = new System.Drawing.Point(421, 386);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizar.TabIndex = 1;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(502, 386);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
-            this.btnSalir.TabIndex = 2;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // id
             // 
@@ -191,6 +160,39 @@
             this.permiteModificacion.Name = "permiteModificacion";
             this.permiteModificacion.ReadOnly = true;
             // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnActualizar.Location = new System.Drawing.Point(421, 386);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.TabIndex = 1;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(502, 386);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 2;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // tsModulosUsuarios
+            // 
+            this.tsModulosUsuarios.Dock = System.Windows.Forms.DockStyle.None;
+            this.tsModulosUsuarios.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsbNuevo,
+            this.tsbEditar,
+            this.tsbEliminar});
+            this.tsModulosUsuarios.Location = new System.Drawing.Point(3, 0);
+            this.tsModulosUsuarios.Name = "tsModulosUsuarios";
+            this.tsModulosUsuarios.Size = new System.Drawing.Size(81, 25);
+            this.tsModulosUsuarios.TabIndex = 0;
+            // 
             // tsbNuevo
             // 
             this.tsbNuevo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -232,10 +234,10 @@
             this.tcModulosUsuarios.TopToolStripPanel.PerformLayout();
             this.tcModulosUsuarios.ResumeLayout(false);
             this.tcModulosUsuarios.PerformLayout();
-            this.tsModulosUsuarios.ResumeLayout(false);
-            this.tsModulosUsuarios.PerformLayout();
             this.tlModulosUsuarios.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvModulosUsuarios)).EndInit();
+            this.tsModulosUsuarios.ResumeLayout(false);
+            this.tsModulosUsuarios.PerformLayout();
             this.ResumeLayout(false);
 
         }

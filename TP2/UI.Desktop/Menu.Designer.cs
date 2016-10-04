@@ -101,6 +101,7 @@
             this.btnAlumnoInscripcion.TabIndex = 0;
             this.btnAlumnoInscripcion.Text = "AlumnoInscripcion";
             this.btnAlumnoInscripcion.UseVisualStyleBackColor = true;
+            this.btnAlumnoInscripcion.Click += new System.EventHandler(this.btnAlumnoInscripcion_Click);
             // 
             // btnComision
             // 
@@ -110,6 +111,7 @@
             this.btnComision.TabIndex = 1;
             this.btnComision.Text = "Comision";
             this.btnComision.UseVisualStyleBackColor = true;
+            this.btnComision.Click += new System.EventHandler(this.btnComision_Click);
             // 
             // btnCurso
             // 
@@ -120,6 +122,7 @@
             this.btnCurso.TabIndex = 2;
             this.btnCurso.Text = "Curso";
             this.btnCurso.UseVisualStyleBackColor = true;
+            this.btnCurso.Click += new System.EventHandler(this.btnCurso_Click);
             // 
             // btnDocenteCurso
             // 
@@ -129,6 +132,7 @@
             this.btnDocenteCurso.TabIndex = 3;
             this.btnDocenteCurso.Text = "DocenteCurso";
             this.btnDocenteCurso.UseVisualStyleBackColor = true;
+            this.btnDocenteCurso.Click += new System.EventHandler(this.btnDocenteCurso_Click);
             // 
             // btnEspecialidad
             // 
@@ -149,6 +153,7 @@
             this.btnMateria.TabIndex = 5;
             this.btnMateria.Text = "Materia";
             this.btnMateria.UseVisualStyleBackColor = true;
+            this.btnMateria.Click += new System.EventHandler(this.btnMateria_Click);
             // 
             // btnModulo
             // 
@@ -159,6 +164,7 @@
             this.btnModulo.TabIndex = 6;
             this.btnModulo.Text = "Modulo";
             this.btnModulo.UseVisualStyleBackColor = true;
+            this.btnModulo.Click += new System.EventHandler(this.btnModulo_Click);
             // 
             // btnModuloUsuario
             // 
@@ -168,6 +174,7 @@
             this.btnModuloUsuario.TabIndex = 7;
             this.btnModuloUsuario.Text = "ModuloUsuario";
             this.btnModuloUsuario.UseVisualStyleBackColor = true;
+            this.btnModuloUsuario.Click += new System.EventHandler(this.btnModuloUsuario_Click);
             // 
             // btnPersona
             // 
@@ -178,6 +185,7 @@
             this.btnPersona.TabIndex = 8;
             this.btnPersona.Text = "Persona";
             this.btnPersona.UseVisualStyleBackColor = true;
+            this.btnPersona.Click += new System.EventHandler(this.btnPersona_Click);
             // 
             // btnPlan
             // 
@@ -187,6 +195,7 @@
             this.btnPlan.TabIndex = 9;
             this.btnPlan.Text = "Plan";
             this.btnPlan.UseVisualStyleBackColor = true;
+            this.btnPlan.Click += new System.EventHandler(this.btnPlan_Click);
             // 
             // btnUsuario
             // 

@@ -30,23 +30,23 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DocentesCursos));
             this.tcDocentesCursos = new System.Windows.Forms.ToolStripContainer();
-            this.tsDocentesCursos = new System.Windows.Forms.ToolStrip();
             this.tlDocentesCursos = new System.Windows.Forms.TableLayoutPanel();
             this.dgvDocentesCursos = new System.Windows.Forms.DataGridView();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idCurso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idDocente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.tsDocentesCursos = new System.Windows.Forms.ToolStrip();
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.tsbEditar = new System.Windows.Forms.ToolStripButton();
             this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
             this.tcDocentesCursos.ContentPanel.SuspendLayout();
             this.tcDocentesCursos.TopToolStripPanel.SuspendLayout();
             this.tcDocentesCursos.SuspendLayout();
-            this.tsDocentesCursos.SuspendLayout();
             this.tlDocentesCursos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocentesCursos)).BeginInit();
+            this.tsDocentesCursos.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcDocentesCursos
@@ -66,18 +66,6 @@
             // tcDocentesCursos.TopToolStripPanel
             // 
             this.tcDocentesCursos.TopToolStripPanel.Controls.Add(this.tsDocentesCursos);
-            // 
-            // tsDocentesCursos
-            // 
-            this.tsDocentesCursos.Dock = System.Windows.Forms.DockStyle.None;
-            this.tsDocentesCursos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbNuevo,
-            this.tsbEditar,
-            this.tsbEliminar});
-            this.tsDocentesCursos.Location = new System.Drawing.Point(3, 0);
-            this.tsDocentesCursos.Name = "tsDocentesCursos";
-            this.tsDocentesCursos.Size = new System.Drawing.Size(112, 25);
-            this.tsDocentesCursos.TabIndex = 0;
             // 
             // tlDocentesCursos
             // 
@@ -108,10 +96,33 @@
             this.tlDocentesCursos.SetColumnSpan(this.dgvDocentesCursos, 2);
             this.dgvDocentesCursos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDocentesCursos.Location = new System.Drawing.Point(3, 3);
+            this.dgvDocentesCursos.MultiSelect = false;
             this.dgvDocentesCursos.Name = "dgvDocentesCursos";
             this.dgvDocentesCursos.ReadOnly = true;
+            this.dgvDocentesCursos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDocentesCursos.Size = new System.Drawing.Size(498, 375);
             this.dgvDocentesCursos.TabIndex = 0;
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "ID";
+            this.id.HeaderText = "ID";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            // 
+            // idCurso
+            // 
+            this.idCurso.DataPropertyName = "IDCurso";
+            this.idCurso.HeaderText = "ID Curso";
+            this.idCurso.Name = "idCurso";
+            this.idCurso.ReadOnly = true;
+            // 
+            // idDocente
+            // 
+            this.idDocente.DataPropertyName = "IDDocente";
+            this.idDocente.HeaderText = "ID Docente";
+            this.idDocente.Name = "idDocente";
+            this.idDocente.ReadOnly = true;
             // 
             // btnActualizar
             // 
@@ -134,26 +145,17 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // id
+            // tsDocentesCursos
             // 
-            this.id.DataPropertyName = "ID";
-            this.id.HeaderText = "ID";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            // 
-            // idCurso
-            // 
-            this.idCurso.DataPropertyName = "IDCurso";
-            this.idCurso.HeaderText = "ID Curso";
-            this.idCurso.Name = "idCurso";
-            this.idCurso.ReadOnly = true;
-            // 
-            // idDocente
-            // 
-            this.idDocente.DataPropertyName = "IDDocente";
-            this.idDocente.HeaderText = "ID Docente";
-            this.idDocente.Name = "idDocente";
-            this.idDocente.ReadOnly = true;
+            this.tsDocentesCursos.Dock = System.Windows.Forms.DockStyle.None;
+            this.tsDocentesCursos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsbNuevo,
+            this.tsbEditar,
+            this.tsbEliminar});
+            this.tsDocentesCursos.Location = new System.Drawing.Point(3, 0);
+            this.tsDocentesCursos.Name = "tsDocentesCursos";
+            this.tsDocentesCursos.Size = new System.Drawing.Size(81, 25);
+            this.tsDocentesCursos.TabIndex = 0;
             // 
             // tsbNuevo
             // 
@@ -196,10 +198,10 @@
             this.tcDocentesCursos.TopToolStripPanel.PerformLayout();
             this.tcDocentesCursos.ResumeLayout(false);
             this.tcDocentesCursos.PerformLayout();
-            this.tsDocentesCursos.ResumeLayout(false);
-            this.tsDocentesCursos.PerformLayout();
             this.tlDocentesCursos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocentesCursos)).EndInit();
+            this.tsDocentesCursos.ResumeLayout(false);
+            this.tsDocentesCursos.PerformLayout();
             this.ResumeLayout(false);
 
         }

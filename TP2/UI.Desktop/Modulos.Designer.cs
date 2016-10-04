@@ -30,22 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Modulos));
             this.tcModulos = new System.Windows.Forms.ToolStripContainer();
-            this.tsModulos = new System.Windows.Forms.ToolStrip();
             this.tlModulos = new System.Windows.Forms.TableLayoutPanel();
             this.dgvModulos = new System.Windows.Forms.DataGridView();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.tsModulos = new System.Windows.Forms.ToolStrip();
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.tsbEditar = new System.Windows.Forms.ToolStripButton();
             this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
             this.tcModulos.ContentPanel.SuspendLayout();
             this.tcModulos.TopToolStripPanel.SuspendLayout();
             this.tcModulos.SuspendLayout();
-            this.tsModulos.SuspendLayout();
             this.tlModulos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvModulos)).BeginInit();
+            this.tsModulos.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcModulos
@@ -65,18 +65,6 @@
             // tcModulos.TopToolStripPanel
             // 
             this.tcModulos.TopToolStripPanel.Controls.Add(this.tsModulos);
-            // 
-            // tsModulos
-            // 
-            this.tsModulos.Dock = System.Windows.Forms.DockStyle.None;
-            this.tsModulos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbNuevo,
-            this.tsbEditar,
-            this.tsbEliminar});
-            this.tsModulos.Location = new System.Drawing.Point(3, 0);
-            this.tsModulos.Name = "tsModulos";
-            this.tsModulos.Size = new System.Drawing.Size(112, 25);
-            this.tsModulos.TabIndex = 0;
             // 
             // tlModulos
             // 
@@ -106,10 +94,26 @@
             this.tlModulos.SetColumnSpan(this.dgvModulos, 2);
             this.dgvModulos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvModulos.Location = new System.Drawing.Point(3, 3);
+            this.dgvModulos.MultiSelect = false;
             this.dgvModulos.Name = "dgvModulos";
             this.dgvModulos.ReadOnly = true;
+            this.dgvModulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvModulos.Size = new System.Drawing.Size(561, 360);
             this.dgvModulos.TabIndex = 0;
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "ID";
+            this.id.HeaderText = "ID";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            // 
+            // descripcion
+            // 
+            this.descripcion.DataPropertyName = "Descripcion";
+            this.descripcion.HeaderText = "Descripcion";
+            this.descripcion.Name = "descripcion";
+            this.descripcion.ReadOnly = true;
             // 
             // btnActualizar
             // 
@@ -132,19 +136,17 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // id
+            // tsModulos
             // 
-            this.id.DataPropertyName = "ID";
-            this.id.HeaderText = "ID";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            // 
-            // descripcion
-            // 
-            this.descripcion.DataPropertyName = "Descripcion";
-            this.descripcion.HeaderText = "Descripcion";
-            this.descripcion.Name = "descripcion";
-            this.descripcion.ReadOnly = true;
+            this.tsModulos.Dock = System.Windows.Forms.DockStyle.None;
+            this.tsModulos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsbNuevo,
+            this.tsbEditar,
+            this.tsbEliminar});
+            this.tsModulos.Location = new System.Drawing.Point(3, 0);
+            this.tsModulos.Name = "tsModulos";
+            this.tsModulos.Size = new System.Drawing.Size(81, 25);
+            this.tsModulos.TabIndex = 0;
             // 
             // tsbNuevo
             // 
@@ -187,10 +189,10 @@
             this.tcModulos.TopToolStripPanel.PerformLayout();
             this.tcModulos.ResumeLayout(false);
             this.tcModulos.PerformLayout();
-            this.tsModulos.ResumeLayout(false);
-            this.tsModulos.PerformLayout();
             this.tlModulos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvModulos)).EndInit();
+            this.tsModulos.ResumeLayout(false);
+            this.tsModulos.PerformLayout();
             this.ResumeLayout(false);
 
         }

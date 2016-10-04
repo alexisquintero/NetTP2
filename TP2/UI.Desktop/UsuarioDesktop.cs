@@ -18,6 +18,7 @@ namespace UI.Desktop
         {
             InitializeComponent();
         }
+        public Usuario UsuarioActual { get; set; }
         public override void MapearDeDatos()
         {
             this.txtID.Text = this.UsuarioActual.ID.ToString();
@@ -28,6 +29,18 @@ namespace UI.Desktop
             this.txtUsuario.Text = this.UsuarioActual.NombreUsuario;
             this.txtClave.Text = this.UsuarioActual.Clave;
             this.txtConfirmarClave.Text = this.UsuarioActual.Clave;
+            if (Modo == ModoForm.Alta || Modo == ModoForm.Modificacion)
+            {
+                this.btnAceptar.Text = "Guardar";
+            }
+            if (Modo == ModoForm.Baja)
+            {
+                this.btnAceptar.Text = "Eliminar";
+            }
+            if (Modo == ModoForm.Consulta)
+            {
+                this.btnAceptar.Text = "Aceptar";
+            }
         }
         public override void MapearADatos()
         {
@@ -44,7 +57,6 @@ namespace UI.Desktop
                 this.UsuarioActual.Email = this.txtEmail.Text;
                 this.UsuarioActual.Clave = this.txtClave.Text;
                 this.UsuarioActual.NombreUsuario = this.txtUsuario.Text;
-
             }
             if (Modo == ModoForm.Modificacion)
             {
@@ -97,56 +109,13 @@ namespace UI.Desktop
             return valida;
 
         }
-        public void Notificar(string titulo, string mensaje, MessageBoxButtons
-        botones, MessageBoxIcon icono)
-        {
-            MessageBox.Show(mensaje, titulo, botones, icono);
-        }
-        public void Notificar(string mensaje, MessageBoxButtons botones,
-        MessageBoxIcon icono)
-        {
-            this.Notificar(this.Text, mensaje, botones, icono);
-        }
-        private Usuario _UsuarioActual;
-
-        public Usuario UsuarioActual
-        {
-            get { return _UsuarioActual; }
-            set { _UsuarioActual = value; }
-        }
-        public UsuarioDesktop(ModoForm modo)
-            : this()
+        public UsuarioDesktop(ModoForm modo) : this()
         {
             Modo = modo;
-            if (Modo == ModoForm.Alta || Modo == ModoForm.Modificacion)
-            {
-                this.btnAceptar.Text = "Guardar";
-            }
-            if (Modo == ModoForm.Baja)
-            {
-                this.btnAceptar.Text = "Eliminar";
-            }
-            if (Modo == ModoForm.Consulta)
-            {
-                this.btnAceptar.Text = "Aceptar";
-            }
         }
-        public UsuarioDesktop(int ID, ModoForm modo)
-            : this()
+        public UsuarioDesktop(int ID, ModoForm modo) : this()
         {
-            Modo = modo;
-            if (Modo == ModoForm.Alta || Modo == ModoForm.Modificacion)
-            {
-                this.btnAceptar.Text = "Guardar";
-            }
-            if (Modo == ModoForm.Baja)
-            {
-                this.btnAceptar.Text = "Eliminar";
-            }
-            if (Modo == ModoForm.Consulta)
-            {
-                this.btnAceptar.Text = "Aceptar";
-            }
+            Modo = modo;           
             UsuarioActual = new UsuarioLogic().GetOne(ID);
             MapearDeDatos();
         }

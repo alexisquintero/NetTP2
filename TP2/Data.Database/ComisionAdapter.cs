@@ -23,7 +23,7 @@ namespace Data.Database
                 {
                     Comision com = new Comision();
                     com.ID = (int)drComisiones["id_comision"];
-                    com.AñoEspecialidad = (int)drComisiones["anio_especialidad"];
+                    com.AnioEspecialidad = (int)drComisiones["anio_especialidad"];
                     com.Descripcion = (string)drComisiones["desc_comision"];
                     com.IDPlan = (int)drComisiones["id_plan"];
 
@@ -56,7 +56,7 @@ namespace Data.Database
                 {
                     com.ID = (int)drComision["id_comision"];
                     com.IDPlan = (int)drComision["id_plan"];
-                    com.AñoEspecialidad = (int)drComision["anio_especialidad"];
+                    com.AnioEspecialidad = (int)drComision["anio_especialidad"];
                     com.Descripcion = (string)drComision["desc_comision"];
                 }
                 drComision.Close();
@@ -100,7 +100,7 @@ namespace Data.Database
                 this.OpenConnection();
                 SqlCommand cmdSave = new SqlCommand("UPDATE comisiones SET anio_especialidad = @anio, " +
                     "desc_comision = @desc, id_plan = @id_pln WHERE id_comision = @id", SqlConn);
-                cmdSave.Parameters.Add("@anio", SqlDbType.Int).Value = comision.AñoEspecialidad;
+                cmdSave.Parameters.Add("@anio", SqlDbType.Int).Value = comision.AnioEspecialidad;
                 cmdSave.Parameters.Add("@desc", SqlDbType.VarChar, 50).Value = comision.Descripcion;
                 cmdSave.Parameters.Add("@id_pln", SqlDbType.Int).Value = comision.IDPlan;
                 cmdSave.Parameters.Add("@id", SqlDbType.Int).Value = comision.ID;
@@ -125,7 +125,7 @@ namespace Data.Database
                 SqlCommand cmdSave = new SqlCommand("INSERT INTO comisiones(anio_especialidad, " +
                     "desc_comision, id_plan) VALUES (@anio, @desc, @id_pln) " +
                     "SELECT @@identity", SqlConn);
-                cmdSave.Parameters.Add("@anio", SqlDbType.Int).Value = comision.AñoEspecialidad;
+                cmdSave.Parameters.Add("@anio", SqlDbType.Int).Value = comision.AnioEspecialidad;
                 cmdSave.Parameters.Add("@desc", SqlDbType.VarChar, 50).Value = comision.Descripcion;
                 cmdSave.Parameters.Add("@id_pln", SqlDbType.Int).Value = comision.IDPlan;
                 comision.ID = Decimal.ToInt32((decimal)cmdSave.ExecuteScalar());

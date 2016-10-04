@@ -13,7 +13,7 @@ namespace Business.Logic
         ModuloAdapter ModuloData;
         public ModuloLogic()
         {
-            ModuloData = new();
+            ModuloData = new ModuloAdapter();
         }
         public List<Modulo> GetAll()
         {

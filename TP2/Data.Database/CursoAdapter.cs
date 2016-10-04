@@ -26,7 +26,7 @@ namespace Data.Database
                     cur.ID = (int)drCursos["id_curso"];
                     cur.IDMateria = (int)drCursos["id_materia"];
                     cur.IDComision = (int)drCursos["id_comision"];
-                    cur.AñoCalendario = (int)drCursos["anio_calendario"];
+                    cur.AnioCalendario = (int)drCursos["anio_calendario"];
                     cur.Cupo = (int)drCursos["cupo"];
 
                     cursos.Add(cur);
@@ -58,7 +58,7 @@ namespace Data.Database
                     cur.ID = (int)drCurso["id_curso"];
                     cur.IDMateria = (int)drCurso["id_materia"];
                     cur.IDComision = (int)drCurso["id_comision"];
-                    cur.AñoCalendario = (int)drCurso["anio_calendario"];
+                    cur.AnioCalendario = (int)drCurso["anio_calendario"];
                     cur.Cupo = (int)drCurso["cupo"];
                 }
                 drCurso.Close();
@@ -105,7 +105,7 @@ namespace Data.Database
                     "WHERE id_curso = @id", SqlConn);
                 cmdSave.Parameters.Add("@id_mat", SqlDbType.Int).Value = curso.IDMateria;
                 cmdSave.Parameters.Add("@id_com", SqlDbType.Int).Value = curso.IDComision;
-                cmdSave.Parameters.Add("@anio", SqlDbType.Int).Value = curso.AñoCalendario;
+                cmdSave.Parameters.Add("@anio", SqlDbType.Int).Value = curso.AnioCalendario;
                 cmdSave.Parameters.Add("@cup", SqlDbType.Int).Value = curso.Cupo;
                 cmdSave.Parameters.Add("@id", SqlDbType.Int).Value = curso.ID;
                 cmdSave.ExecuteNonQuery();
@@ -131,7 +131,7 @@ namespace Data.Database
                     "SELECT @identity", SqlConn);
                 cmdSave.Parameters.Add("@id_mat", SqlDbType.Int).Value = curso.IDMateria;
                 cmdSave.Parameters.Add("@id_com", SqlDbType.Int).Value = curso.IDComision;
-                cmdSave.Parameters.Add("@anio", SqlDbType.Int).Value = curso.AñoCalendario;
+                cmdSave.Parameters.Add("@anio", SqlDbType.Int).Value = curso.AnioCalendario;
                 cmdSave.Parameters.Add("@cup", SqlDbType.Int).Value = curso.Cupo;             
                 curso.ID = Decimal.ToInt32((decimal)cmdSave.ExecuteScalar());
             }
