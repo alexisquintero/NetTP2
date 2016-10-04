@@ -44,7 +44,7 @@ namespace UI.Desktop
         {
             UsuarioDesktop formUsuario = new UsuarioDesktop(ApplicationForm.ModoForm.Alta);
             formUsuario.ShowDialog();
-            this.Listar();
+            Listar();
         }
 
         private void tsbEditar_Click(object sender, EventArgs e)
@@ -55,7 +55,7 @@ namespace UI.Desktop
 
                 UsuarioDesktop formUsuario = new UsuarioDesktop(ID, ApplicationForm.ModoForm.Modificacion);
                 formUsuario.ShowDialog();
-                this.Listar(); 
+                Listar(); 
             }
             else
             {

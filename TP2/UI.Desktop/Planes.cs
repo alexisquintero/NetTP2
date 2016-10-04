@@ -39,5 +39,44 @@ namespace UI.Desktop
         {
             this.Close();
         }
+
+        private void tsbNuevo_Click(object sender, EventArgs e)
+        {
+            PlanDesktop formPlan = new PlanDesktop(ApplicationForm.ModoForm.Alta);
+            formPlan.ShowDialog();
+            Listar();
+        }
+
+        private void tsbEditar_Click(object sender, EventArgs e)
+        {
+            if (dgvPlanes.SelectedRows.Count > 0)
+            {
+                int ID = ((Plan)this.dgvPlanes.SelectedRows[0].DataBoundItem).ID;
+
+                PlanDesktop formPlan = new PlanDesktop(ID, ApplicationForm.ModoForm.Modificacion);
+                formPlan.ShowDialog();
+                Listar();
+            }
+            else
+            {
+                MessageBox.Show("No hay elementos seleccionados", "Error", MessageBoxButtons.OK);
+            }
+        }
+
+        private void tsbEliminar_Click(object sender, EventArgs e)
+        {
+            if (dgvPlanes.SelectedRows.Count > 0)
+            {
+                int ID = ((Plan)this.dgvPlanes.SelectedRows[0].DataBoundItem).ID;
+
+                PlanDesktop formPlan = new PlanDesktop(ID, ApplicationForm.ModoForm.Baja);
+                formPlan.ShowDialog();
+                Listar();
+            }
+            else
+            {
+                MessageBox.Show("No hay elementos seleccionados", "Error", MessageBoxButtons.OK);
+            }
+        }
     }
 }

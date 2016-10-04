@@ -125,6 +125,12 @@
     <Compile Include="Personas.Designer.cs">
       <DependentUpon>Personas.cs</DependentUpon>
     </Compile>
+    <Compile Include="PlanDesktop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlanDesktop.Designer.cs">
+      <DependentUpon>PlanDesktop.cs</DependentUpon>
+    </Compile>
     <Compile Include="Planes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Personas.resx">
       <DependentUpon>Personas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanDesktop.resx">
+      <DependentUpon>PlanDesktop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Planes.resx">
       <DependentUpon>Planes.cs</DependentUpon>

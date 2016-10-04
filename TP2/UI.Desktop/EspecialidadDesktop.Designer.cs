@@ -56,26 +56,28 @@
             this.tlEspecialidadDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlEspecialidadDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlEspecialidadDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlEspecialidadDesktop.Size = new System.Drawing.Size(303, 82);
+            this.tlEspecialidadDesktop.Size = new System.Drawing.Size(281, 81);
             this.tlEspecialidadDesktop.TabIndex = 0;
             // 
             // lblID
             // 
+            this.lblID.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblID.AutoSize = true;
             this.lblID.Location = new System.Drawing.Point(3, 0);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(18, 13);
             this.lblID.TabIndex = 0;
-            this.lblID.Text = "ID";
+            this.lblID.Text = "ID:";
             // 
             // lblDescripcion
             // 
+            this.lblDescripcion.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Location = new System.Drawing.Point(3, 26);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(63, 13);
             this.lblDescripcion.TabIndex = 1;
-            this.lblDescripcion.Text = "Descripción";
+            this.lblDescripcion.Text = "Descripción:";
             // 
             // txtID
             // 
@@ -83,7 +85,7 @@
             this.txtID.Location = new System.Drawing.Point(84, 3);
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
-            this.txtID.Size = new System.Drawing.Size(216, 20);
+            this.txtID.Size = new System.Drawing.Size(193, 20);
             this.txtID.TabIndex = 2;
             // 
             // txtDescripcion
@@ -91,7 +93,7 @@
             this.txtDescripcion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtDescripcion.Location = new System.Drawing.Point(84, 29);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(216, 20);
+            this.txtDescripcion.Size = new System.Drawing.Size(193, 20);
             this.txtDescripcion.TabIndex = 3;
             // 
             // btnAceptar
@@ -119,7 +121,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(303, 82);
+            this.ClientSize = new System.Drawing.Size(281, 81);
             this.Controls.Add(this.tlEspecialidadDesktop);
             this.Name = "EspecialidadDesktop";
             this.Text = "EspecialidadDesktop";
