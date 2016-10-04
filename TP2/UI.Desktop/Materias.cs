@@ -39,5 +39,44 @@ namespace UI.Desktop
         {
             this.Close();
         }
+
+        private void tsbNuevo_Click(object sender, EventArgs e)
+        {
+            MateriaDesktop formMateria = new MateriaDesktop(ApplicationForm.ModoForm.Alta);
+            formMateria.ShowDialog();
+            Listar();
+        }
+
+        private void tsbEditar_Click(object sender, EventArgs e)
+        {
+            if (dgvMaterias.SelectedRows.Count > 0)
+            {
+                int ID = ((Materia)this.dgvMaterias.SelectedRows[0].DataBoundItem).ID;
+
+                MateriaDesktop formMateria = new MateriaDesktop(ID, ApplicationForm.ModoForm.Modificacion);
+                formMateria.ShowDialog();
+                Listar();
+            }
+            else
+            {
+                MessageBox.Show("No hay elementos seleccionados", "Error", MessageBoxButtons.OK);
+            }
+        }
+
+        private void tsbEliminar_Click(object sender, EventArgs e)
+        {
+            if (dgvMaterias.SelectedRows.Count > 0)
+            {
+                int ID = ((Materia)this.dgvMaterias.SelectedRows[0].DataBoundItem).ID;
+
+                MateriaDesktop formMateria = new MateriaDesktop(ID, ApplicationForm.ModoForm.Baja);
+                formMateria.ShowDialog();
+                this.Listar();
+            }
+            else
+            {
+                MessageBox.Show("No hay elementos seleccionados", "Error", MessageBoxButtons.OK);
+            }
+        }
     }
 }

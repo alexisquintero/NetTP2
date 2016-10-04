@@ -16,6 +16,7 @@ namespace Data.Database
             List<Materia> materias = new List<Materia>();
             try
             {
+                this.OpenConnection();
                 SqlCommand cmdMaterias = new SqlCommand("SELECT * FROM materias", SqlConn);
                 SqlDataReader drMaterias = cmdMaterias.ExecuteReader();
                 while (drMaterias.Read())
