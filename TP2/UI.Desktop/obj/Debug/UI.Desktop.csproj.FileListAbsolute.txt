@@ -153,3 +153,4 @@ I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.Cursos.resources
 I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.DocentesCursos.resources
 I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.Materias.resources
 I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.PlanDesktop.resources
+I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.ComisionDesktop.resources

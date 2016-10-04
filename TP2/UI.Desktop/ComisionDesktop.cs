@@ -1,38 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Business.Logic;
 using Business.Entities;
+using Business.Logic;
 
 namespace UI.Desktop
 {
-    public partial class PlanDesktop : ApplicationForm
+    public partial class ComisionDesktop : ApplicationForm
     {
-        public PlanDesktop()
+        public ComisionDesktop()
         {
             InitializeComponent();
         }
-        public Plan PlanActual { get; set; }
-        public PlanDesktop(ModoForm modo) : this()
+        public Comision ComisionActual { get; set; }
+        public ComisionDesktop(ModoForm modo) : this()
         {
             Modo = modo;
         }
-        public PlanDesktop(int ID, ModoForm modo) : this()
+        public ComisionDesktop(int ID, ModoForm modo) : this()
         {
             Modo = modo;
-            PlanActual = new PlanLogic().GetOne(ID);
+            ComisionActual = new ComisionLogic().GetOne(ID);
             MapearDeDatos();
         }
         public override void MapearDeDatos()
         {
-            txtID.Text = PlanActual.ID.ToString();
-            txtDescripcion.Text = PlanActual.Descripcion;
+            txtID.Text = ComisionActual.ID.ToString();
+            txtDescripcion.Text = ComisionActual.Descripcion;
+            txtAnioDeEspecialidad.Text = ComisionActual.AnioEspecialidad.ToString();
 
             if (Modo == ModoForm.Alta || Modo == ModoForm.Modificacion)
             {
@@ -51,24 +52,25 @@ namespace UI.Desktop
         {
             if (Modo == ModoForm.Alta)
             {
-                PlanActual = new Plan();
-                PlanActual.State = Plan.States.New;
+                ComisionActual = new Comision();
+                ComisionActual.State = Comision.States.New;
             }
             if (Modo == ModoForm.Alta || Modo == ModoForm.Modificacion)
             {
-                PlanActual.Descripcion = txtDescripcion.Text;
+                ComisionActual.Descripcion = txtDescripcion.Text;
+                ComisionActual.AnioEspecialidad = Int32.Parse(txtAnioDeEspecialidad.Text);
             }
             if (Modo == ModoForm.Modificacion)
             {
-                PlanActual.State = Plan.States.Modified;
+                ComisionActual.State = Comision.States.Modified;
             }
             if (Modo == ModoForm.Consulta)
             {
-                PlanActual.State = Plan.States.Unmodified;
+                ComisionActual.State = Comision.States.Unmodified;
             }
             if (Modo == ModoForm.Baja)
             {
-                PlanActual.State = Plan.States.Deleted;
+                ComisionActual.State = Comision.States.Deleted;
             }
         }
         public override bool Validar()
@@ -77,7 +79,9 @@ namespace UI.Desktop
             string mensaje = "";
 
             if (txtDescripcion.Text.Trim() == "")
-                mensaje += "La descripcion no puede estar en blanco" + "\n";            
+                mensaje += "La descripcion no puede estar en blanco" + "\n";
+            if (txtAnioDeEspecialidad.Text.Trim() == "")
+                mensaje += "El año de especialidad no puede estar en blanco" + "\n";            
 
             if (!String.IsNullOrEmpty(mensaje))
             {
@@ -92,7 +96,7 @@ namespace UI.Desktop
         public override void GuardarCambios()
         {
             MapearADatos();
-            new PlanLogic().Save(PlanActual);
+            new ComisionLogic().Save(ComisionActual);
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)

@@ -39,5 +39,44 @@ namespace UI.Desktop
         {
             this.Close();
         }
+
+        private void tsbNuevo_Click(object sender, EventArgs e)
+        {
+            ComisionDesktop formComision= new ComisionDesktop(ApplicationForm.ModoForm.Alta);
+            formComision.ShowDialog();
+            Listar();
+        }
+
+        private void tsbEditar_Click(object sender, EventArgs e)
+        {
+            if (dgvComisiones.SelectedRows.Count > 0)
+            {
+                int ID = ((Comision)this.dgvComisiones.SelectedRows[0].DataBoundItem).ID;
+
+                ComisionDesktop formComision = new ComisionDesktop(ID, ApplicationForm.ModoForm.Modificacion);
+                formComision.ShowDialog();
+                Listar();
+            }
+            else
+            {
+                MessageBox.Show("No hay elementos seleccionados", "Error", MessageBoxButtons.OK);
+            }
+        }
+
+        private void tsbEliminar_Click(object sender, EventArgs e)
+        {
+            if (dgvComisiones.SelectedRows.Count > 0)
+            {
+                int ID = ((Comision)this.dgvComisiones.SelectedRows[0].DataBoundItem).ID;
+
+                ComisionDesktop formComision = new ComisionDesktop(ID, ApplicationForm.ModoForm.Baja);
+                formComision.ShowDialog();
+                this.Listar();
+            }
+            else
+            {
+                MessageBox.Show("No hay elementos seleccionados", "Error", MessageBoxButtons.OK);
+            }
+        }
     }
 }

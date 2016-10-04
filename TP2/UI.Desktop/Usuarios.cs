@@ -51,7 +51,7 @@ namespace UI.Desktop
         {
             if (dgvUsuarios.SelectedRows.Count > 0)
             {
-                int ID = ((Business.Entities.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).ID;
+                int ID = ((Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).ID;
 
                 UsuarioDesktop formUsuario = new UsuarioDesktop(ID, ApplicationForm.ModoForm.Modificacion);
                 formUsuario.ShowDialog();
@@ -67,7 +67,7 @@ namespace UI.Desktop
         {
             if (dgvUsuarios.SelectedRows.Count > 0)
             {
-                int ID = ((Business.Entities.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).ID;
+                int ID = ((Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).ID;
 
                 UsuarioDesktop formUsuario = new UsuarioDesktop(ID, ApplicationForm.ModoForm.Baja);
                 formUsuario.ShowDialog();

@@ -52,7 +52,7 @@ namespace UI.Desktop
             if(Modo == ModoForm.Alta)
             {
                 EspecialidadActual = new Especialidad();
-                EspecialidadActual.State = Usuario.States.New;
+                EspecialidadActual.State = Especialidad.States.New;
             }
             if(Modo == ModoForm.Alta || Modo == ModoForm.Modificacion)
             {
@@ -60,15 +60,15 @@ namespace UI.Desktop
             }
             if (Modo == ModoForm.Modificacion)
             {
-                EspecialidadActual.State = Usuario.States.Modified;
+                EspecialidadActual.State = Especialidad.States.Modified;
             }
             if (Modo == ModoForm.Consulta)
             {
-                EspecialidadActual.State = Usuario.States.Unmodified;
+                EspecialidadActual.State = Especialidad.States.Unmodified;
             }
             if (Modo == ModoForm.Baja)
             {
-                EspecialidadActual.State = Usuario.States.Deleted;
+                EspecialidadActual.State = Especialidad.States.Deleted;
             }
         }
         public override void GuardarCambios()
