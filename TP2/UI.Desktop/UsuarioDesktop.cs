@@ -29,6 +29,7 @@ namespace UI.Desktop
             this.txtUsuario.Text = this.UsuarioActual.NombreUsuario;
             this.txtClave.Text = this.UsuarioActual.Clave;
             this.txtConfirmarClave.Text = this.UsuarioActual.Clave;
+
             if (Modo == ModoForm.Alta || Modo == ModoForm.Modificacion)
             {
                 this.btnAceptar.Text = "Guardar";

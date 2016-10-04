@@ -21,7 +21,19 @@ namespace UI.Desktop
         }
         public EspecialidadDesktop(ModoForm modo) : this()
         {
+            this.Modo = modo;           
+        }
+        public EspecialidadDesktop(int ID, ModoForm modo) : this()
+        {
             this.Modo = modo;
+            EspecialidadActual = new EspecialidadLogic().GetOne(ID);
+            MapearDeDatos();
+        }
+        public override void MapearDeDatos()
+        {
+            this.txtID.Text = this.EspecialidadActual.ID.ToString();
+            this.txtDescripcion.Text = this.EspecialidadActual.Descripcion;
+
             if (Modo == ModoForm.Alta || Modo == ModoForm.Modificacion)
             {
                 this.btnAceptar.Text = "Guardar";
@@ -35,25 +47,34 @@ namespace UI.Desktop
                 this.btnAceptar.Text = "Aceptar";
             }
         }
-        public EspecialidadDesktop(int ID, ModoForm modo) : this()
-        {
-            this.Modo = modo;
-            EspecialidadLogic el = new EspecialidadLogic();
-            EspecialidadActual = el.GetOne(ID);
-            this.MapearADatos();
-        }
-        public override void MapearDeDatos()
-        {
-            this.txtID.Text = this.EspecialidadActual.ID.ToString();
-            this.txtDescripcion.Text = this.EspecialidadActual.Descripcion;           
-        }
         public override void MapearADatos()
         {
-
+            if(Modo == ModoForm.Alta)
+            {
+                EspecialidadActual = new Especialidad();
+                EspecialidadActual.State = Usuario.States.New;
+            }
+            if(Modo == ModoForm.Alta || Modo == ModoForm.Modificacion)
+            {
+                EspecialidadActual.Descripcion = txtDescripcion.Text;
+            }
+            if (Modo == ModoForm.Modificacion)
+            {
+                EspecialidadActual.State = Usuario.States.Modified;
+            }
+            if (Modo == ModoForm.Consulta)
+            {
+                EspecialidadActual.State = Usuario.States.Unmodified;
+            }
+            if (Modo == ModoForm.Baja)
+            {
+                EspecialidadActual.State = Usuario.States.Deleted;
+            }
         }
         public override void GuardarCambios()
         {
-
+            MapearADatos();
+            new EspecialidadLogic().Save(EspecialidadActual);
         }
         public override bool Validar()
         {
@@ -72,6 +93,20 @@ namespace UI.Desktop
                 valida = true;
             }
             return valida;
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            if (Validar())
+            {
+                GuardarCambios();
+                this.Close();
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

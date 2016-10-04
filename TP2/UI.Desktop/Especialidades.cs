@@ -34,5 +34,44 @@ namespace UI.Desktop
         {
             this.Close();
         }
+
+        private void tsbNuevo_Click(object sender, EventArgs e)
+        {
+                EspecialidadDesktop formEspecialidad = new EspecialidadDesktop(ApplicationForm.ModoForm.Alta);
+                formEspecialidad.ShowDialog();
+                this.Listar(); 
+        }
+
+        private void tsbEditar_Click(object sender, EventArgs e)
+        {
+            if(dgvEspecialidad.SelectedRows.Count > 0)
+            {
+                int ID = ((Especialidad)dgvEspecialidad.SelectedRows[0].DataBoundItem).ID;
+
+                EspecialidadDesktop formEspecialidad = new EspecialidadDesktop(ID, ApplicationForm.ModoForm.Modificacion);
+                formEspecialidad.ShowDialog();
+                Listar();
+            }
+            else
+            {
+                MessageBox.Show("No hay elementos seleccionados", "Error", MessageBoxButtons.OK);
+            }
+        }
+
+        private void tsbEliminar_Click(object sender, EventArgs e)
+        {
+            if (dgvEspecialidad.SelectedRows.Count > 0)
+            {
+                int ID = ((Especialidad)dgvEspecialidad.SelectedRows[0].DataBoundItem).ID;
+
+                EspecialidadDesktop formEspecialidad = new EspecialidadDesktop(ID, ApplicationForm.ModoForm.Baja);
+                formEspecialidad.ShowDialog();
+                Listar();
+            }
+            else
+            {
+                MessageBox.Show("No hay elementos seleccionados", "Error", MessageBoxButtons.OK);
+            }
+        }
     }
 }

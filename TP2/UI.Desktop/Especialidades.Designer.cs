@@ -30,22 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Especialidades));
             this.tcEspecialidad = new System.Windows.Forms.ToolStripContainer();
-            this.tsEspecialidad = new System.Windows.Forms.ToolStrip();
             this.tlEspecialidad = new System.Windows.Forms.TableLayoutPanel();
             this.dgvEspecialidad = new System.Windows.Forms.DataGridView();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.tsEspecialidad = new System.Windows.Forms.ToolStrip();
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.tsbEditar = new System.Windows.Forms.ToolStripButton();
             this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
             this.tcEspecialidad.ContentPanel.SuspendLayout();
             this.tcEspecialidad.TopToolStripPanel.SuspendLayout();
             this.tcEspecialidad.SuspendLayout();
-            this.tsEspecialidad.SuspendLayout();
             this.tlEspecialidad.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEspecialidad)).BeginInit();
+            this.tsEspecialidad.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcEspecialidad
@@ -65,18 +65,6 @@
             // tcEspecialidad.TopToolStripPanel
             // 
             this.tcEspecialidad.TopToolStripPanel.Controls.Add(this.tsEspecialidad);
-            // 
-            // tsEspecialidad
-            // 
-            this.tsEspecialidad.Dock = System.Windows.Forms.DockStyle.None;
-            this.tsEspecialidad.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbNuevo,
-            this.tsbEditar,
-            this.tsbEliminar});
-            this.tsEspecialidad.Location = new System.Drawing.Point(3, 0);
-            this.tsEspecialidad.Name = "tsEspecialidad";
-            this.tsEspecialidad.Size = new System.Drawing.Size(112, 25);
-            this.tsEspecialidad.TabIndex = 0;
             // 
             // tlEspecialidad
             // 
@@ -113,6 +101,20 @@
             this.dgvEspecialidad.Size = new System.Drawing.Size(595, 318);
             this.dgvEspecialidad.TabIndex = 0;
             // 
+            // id
+            // 
+            this.id.DataPropertyName = "ID";
+            this.id.HeaderText = "ID";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            // 
+            // descripcion
+            // 
+            this.descripcion.DataPropertyName = "Descripcion";
+            this.descripcion.HeaderText = "Descripción";
+            this.descripcion.Name = "descripcion";
+            this.descripcion.ReadOnly = true;
+            // 
             // btnActualizar
             // 
             this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -133,19 +135,17 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // id
+            // tsEspecialidad
             // 
-            this.id.DataPropertyName = "ID";
-            this.id.HeaderText = "ID";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            // 
-            // descripcion
-            // 
-            this.descripcion.DataPropertyName = "Descripcion";
-            this.descripcion.HeaderText = "Descripción";
-            this.descripcion.Name = "descripcion";
-            this.descripcion.ReadOnly = true;
+            this.tsEspecialidad.Dock = System.Windows.Forms.DockStyle.None;
+            this.tsEspecialidad.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsbNuevo,
+            this.tsbEditar,
+            this.tsbEliminar});
+            this.tsEspecialidad.Location = new System.Drawing.Point(3, 0);
+            this.tsEspecialidad.Name = "tsEspecialidad";
+            this.tsEspecialidad.Size = new System.Drawing.Size(112, 25);
+            this.tsEspecialidad.TabIndex = 0;
             // 
             // tsbNuevo
             // 
@@ -156,6 +156,7 @@
             this.tsbNuevo.Size = new System.Drawing.Size(23, 22);
             this.tsbNuevo.Text = "toolStripButton1";
             this.tsbNuevo.ToolTipText = "Nuevo";
+            this.tsbNuevo.Click += new System.EventHandler(this.tsbNuevo_Click);
             // 
             // tsbEditar
             // 
@@ -166,6 +167,7 @@
             this.tsbEditar.Size = new System.Drawing.Size(23, 22);
             this.tsbEditar.Text = "toolStripButton1";
             this.tsbEditar.ToolTipText = "Editar";
+            this.tsbEditar.Click += new System.EventHandler(this.tsbEditar_Click);
             // 
             // tsbEliminar
             // 
@@ -175,14 +177,15 @@
             this.tsbEliminar.Name = "tsbEliminar";
             this.tsbEliminar.Size = new System.Drawing.Size(23, 22);
             this.tsbEliminar.Text = "Eliminar";
+            this.tsbEliminar.Click += new System.EventHandler(this.tsbEliminar_Click);
             // 
-            // Especialidad
+            // Especialidades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 378);
             this.Controls.Add(this.tcEspecialidad);
-            this.Name = "Especialidad";
+            this.Name = "Especialidades";
             this.Text = "Especialidad";
             this.Load += new System.EventHandler(this.Especialidad_Load);
             this.tcEspecialidad.ContentPanel.ResumeLayout(false);
@@ -190,10 +193,10 @@
             this.tcEspecialidad.TopToolStripPanel.PerformLayout();
             this.tcEspecialidad.ResumeLayout(false);
             this.tcEspecialidad.PerformLayout();
-            this.tsEspecialidad.ResumeLayout(false);
-            this.tsEspecialidad.PerformLayout();
             this.tlEspecialidad.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEspecialidad)).EndInit();
+            this.tsEspecialidad.ResumeLayout(false);
+            this.tsEspecialidad.PerformLayout();
             this.ResumeLayout(false);
 
         }
