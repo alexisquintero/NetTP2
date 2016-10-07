@@ -27,3 +27,4 @@ I:\UTN\Net\tp\NetTP2\TP2\Util\bin\Debug\Util.dll
 I:\UTN\Net\tp\NetTP2\TP2\Util\bin\Debug\Util.pdb
 I:\UTN\Net\tp\NetTP2\TP2\Util\obj\Debug\Util.dll
 I:\UTN\Net\tp\NetTP2\TP2\Util\obj\Debug\Util.pdb
+I:\UTN\Net\tp\NetTP2\TP2\Util\obj\Debug\Util.csprojResolveAssemblyReference.cache

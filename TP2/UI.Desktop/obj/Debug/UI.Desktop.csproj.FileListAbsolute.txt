@@ -155,3 +155,4 @@ I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.Materias.resources
 I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.PlanDesktop.resources
 I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.ComisionDesktop.resources
 I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.MateriaDesktop.resources
+I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.CursoDesktop.resources

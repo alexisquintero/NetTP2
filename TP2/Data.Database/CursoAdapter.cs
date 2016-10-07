@@ -126,9 +126,9 @@ namespace Data.Database
             try
             {
                 this.OpenConnection();
-                SqlCommand cmdSave = new SqlCommand("INSERT INTO curso(id_materia, id_comision, " +
+                SqlCommand cmdSave = new SqlCommand("INSERT INTO cursos(id_materia, id_comision, " +
                     "anio_calendario, cupo) VALUES (@id_mat, @id_com, @anio, @cup) " +
-                    "SELECT @identity", SqlConn);
+                    "SELECT @@identity", SqlConn);
                 cmdSave.Parameters.Add("@id_mat", SqlDbType.Int).Value = curso.IDMateria;
                 cmdSave.Parameters.Add("@id_com", SqlDbType.Int).Value = curso.IDComision;
                 cmdSave.Parameters.Add("@anio", SqlDbType.Int).Value = curso.AnioCalendario;
