@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlumnoInscripcionLogic.cs" />
+    <Compile Include="AlumnoLogic.cs" />
     <Compile Include="BusinessLogic.cs" />
     <Compile Include="ComisionLogic.cs" />
     <Compile Include="CursoLogic.cs" />
@@ -50,6 +51,7 @@
     <Compile Include="ModuloUsuarioLogic.cs" />
     <Compile Include="PersonasLogic.cs" />
     <Compile Include="PlanLogic.cs" />
+    <Compile Include="ProfesorLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuarioLogic.cs" />
   </ItemGroup>

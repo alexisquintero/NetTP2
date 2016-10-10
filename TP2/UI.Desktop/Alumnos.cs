@@ -12,25 +12,25 @@ using Business.Logic;
 
 namespace UI.Desktop
 {
-    public partial class Usuarios : Form
+    public partial class Alumnos : Form
     {
-        public Usuarios()
+        public Alumnos()
         {
             InitializeComponent();
-            this.dgvUsuarios.AutoGenerateColumns = false;
+            dgvAlumnos.AutoGenerateColumns = false;
         }
         public void Listar()
         {
-            UsuarioLogic ul = new UsuarioLogic();
-            this.dgvUsuarios.DataSource = ul.GetAll();
+            AlumnoLogic al = new AlumnoLogic();
+            dgvAlumnos.DataSource = al.GetAll();
         }
 
-        private void toolStripContainer1_ContentPanel_Load(object sender, EventArgs e)
+        private void Alumnos_Load(object sender, EventArgs e)
         {
-
+            Listar();
         }
 
-        private void Usuarios_Load(object sender, EventArgs e)
+        private void btnActualizar_Click(object sender, EventArgs e)
         {
             Listar();
         }
@@ -42,20 +42,20 @@ namespace UI.Desktop
 
         private void tsbNuevo_Click(object sender, EventArgs e)
         {
-            UsuarioDesktop formUsuario = new UsuarioDesktop(ApplicationForm.ModoForm.Alta);
-            formUsuario.ShowDialog();
+            AlumnoDesktop formAlumno = new AlumnoDesktop(ApplicationForm.ModoForm.Alta);
+            formAlumno.ShowDialog();
             Listar();
         }
 
         private void tsbEditar_Click(object sender, EventArgs e)
         {
-            if (dgvUsuarios.SelectedRows.Count > 0)
+            if (dgvAlumnos.SelectedRows.Count > 0)
             {
-                int ID = ((Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).ID;
+                int ID = ((Business.Entities.Personas)this.dgvAlumnos.SelectedRows[0].DataBoundItem).ID;
 
-                UsuarioDesktop formUsuario = new UsuarioDesktop(ID, ApplicationForm.ModoForm.Modificacion);
-                formUsuario.ShowDialog();
-                Listar(); 
+                AlumnoDesktop formAlumno = new AlumnoDesktop(ID, ApplicationForm.ModoForm.Modificacion);
+                formAlumno.ShowDialog();
+                Listar();
             }
             else
             {
@@ -65,23 +65,18 @@ namespace UI.Desktop
 
         private void tsbEliminar_Click(object sender, EventArgs e)
         {
-            if (dgvUsuarios.SelectedRows.Count > 0)
+            if (dgvAlumnos.SelectedRows.Count > 0)
             {
-                int ID = ((Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).ID;
+                int ID = ((Business.Entities.Personas)this.dgvAlumnos.SelectedRows[0].DataBoundItem).ID;
 
-                UsuarioDesktop formUsuario = new UsuarioDesktop(ID, ApplicationForm.ModoForm.Baja);
-                formUsuario.ShowDialog();
+                AlumnoDesktop formAlumno = new AlumnoDesktop(ID, ApplicationForm.ModoForm.Baja);
+                formAlumno.ShowDialog();
                 this.Listar();
             }
             else
             {
                 MessageBox.Show("No hay elementos seleccionados", "Error", MessageBoxButtons.OK);
             }
-        }
-
-        private void btnActualizar_Click(object sender, EventArgs e)
-        {
-            Listar();
         }
     }
 }

@@ -42,6 +42,7 @@
             this.btnPlan = new System.Windows.Forms.Button();
             this.btnUsuario = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnAlumno = new System.Windows.Forms.Button();
             this.tcMenu.ContentPanel.SuspendLayout();
             this.tcMenu.SuspendLayout();
             this.tlMenu.SuspendLayout();
@@ -78,6 +79,7 @@
             this.tlMenu.Controls.Add(this.btnPlan, 1, 4);
             this.tlMenu.Controls.Add(this.btnUsuario, 0, 5);
             this.tlMenu.Controls.Add(this.btnSalir, 1, 6);
+            this.tlMenu.Controls.Add(this.btnAlumno, 1, 5);
             this.tlMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlMenu.Location = new System.Drawing.Point(0, 0);
             this.tlMenu.Name = "tlMenu";
@@ -219,6 +221,16 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // btnAlumno
+            // 
+            this.btnAlumno.Location = new System.Drawing.Point(187, 148);
+            this.btnAlumno.Name = "btnAlumno";
+            this.btnAlumno.Size = new System.Drawing.Size(75, 23);
+            this.btnAlumno.TabIndex = 12;
+            this.btnAlumno.Text = "Alumno";
+            this.btnAlumno.UseVisualStyleBackColor = true;
+            this.btnAlumno.Click += new System.EventHandler(this.btnAlumno_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,5 +264,6 @@
         private System.Windows.Forms.Button btnPlan;
         private System.Windows.Forms.Button btnUsuario;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnAlumno;
     }
 }

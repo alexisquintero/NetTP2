@@ -83,5 +83,11 @@ namespace UI.Desktop
             Planes planes = new Planes();
             planes.ShowDialog();
         }
+
+        private void btnAlumno_Click(object sender, EventArgs e)
+        {
+            Alumnos alumnos = new Alumnos();
+            alumnos.ShowDialog();
+        }
     }
 }
