@@ -89,5 +89,11 @@ namespace UI.Desktop
             Alumnos alumnos = new Alumnos();
             alumnos.ShowDialog();
         }
+
+        private void btnProfesor_Click(object sender, EventArgs e)
+        {
+            Profesores profesores = new Profesores();
+            profesores.ShowDialog();
+        }
     }
 }

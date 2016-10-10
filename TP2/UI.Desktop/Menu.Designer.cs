@@ -43,6 +43,7 @@
             this.btnUsuario = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnAlumno = new System.Windows.Forms.Button();
+            this.btnProfesor = new System.Windows.Forms.Button();
             this.tcMenu.ContentPanel.SuspendLayout();
             this.tcMenu.SuspendLayout();
             this.tlMenu.SuspendLayout();
@@ -78,12 +79,13 @@
             this.tlMenu.Controls.Add(this.btnPersona, 0, 4);
             this.tlMenu.Controls.Add(this.btnPlan, 1, 4);
             this.tlMenu.Controls.Add(this.btnUsuario, 0, 5);
-            this.tlMenu.Controls.Add(this.btnSalir, 1, 6);
             this.tlMenu.Controls.Add(this.btnAlumno, 1, 5);
+            this.tlMenu.Controls.Add(this.btnProfesor, 0, 7);
+            this.tlMenu.Controls.Add(this.btnSalir, 1, 8);
             this.tlMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlMenu.Location = new System.Drawing.Point(0, 0);
             this.tlMenu.Name = "tlMenu";
-            this.tlMenu.RowCount = 7;
+            this.tlMenu.RowCount = 9;
             this.tlMenu.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlMenu.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlMenu.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -91,6 +93,8 @@
             this.tlMenu.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlMenu.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlMenu.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tlMenu.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tlMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlMenu.Size = new System.Drawing.Size(369, 258);
             this.tlMenu.TabIndex = 0;
             // 
@@ -213,7 +217,7 @@
             // btnSalir
             // 
             this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSalir.Location = new System.Drawing.Point(291, 177);
+            this.btnSalir.Location = new System.Drawing.Point(291, 206);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 11;
@@ -230,6 +234,17 @@
             this.btnAlumno.Text = "Alumno";
             this.btnAlumno.UseVisualStyleBackColor = true;
             this.btnAlumno.Click += new System.EventHandler(this.btnAlumno_Click);
+            // 
+            // btnProfesor
+            // 
+            this.btnProfesor.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnProfesor.Location = new System.Drawing.Point(54, 177);
+            this.btnProfesor.Name = "btnProfesor";
+            this.btnProfesor.Size = new System.Drawing.Size(75, 23);
+            this.btnProfesor.TabIndex = 13;
+            this.btnProfesor.Text = "Profesor";
+            this.btnProfesor.UseVisualStyleBackColor = true;
+            this.btnProfesor.Click += new System.EventHandler(this.btnProfesor_Click);
             // 
             // Menu
             // 
@@ -265,5 +280,6 @@
         private System.Windows.Forms.Button btnUsuario;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnAlumno;
+        private System.Windows.Forms.Button btnProfesor;
     }
 }

@@ -75,6 +75,7 @@
             this.tlAlumnoDesktop.Controls.Add(this.txtLegajo, 3, 0);
             this.tlAlumnoDesktop.Controls.Add(this.btnAceptar, 2, 4);
             this.tlAlumnoDesktop.Controls.Add(this.btnCancelar, 3, 4);
+            this.tlAlumnoDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlAlumnoDesktop.Location = new System.Drawing.Point(0, 0);
             this.tlAlumnoDesktop.Name = "tlAlumnoDesktop";
             this.tlAlumnoDesktop.RowCount = 5;
@@ -83,7 +84,7 @@
             this.tlAlumnoDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlAlumnoDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlAlumnoDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tlAlumnoDesktop.Size = new System.Drawing.Size(456, 363);
+            this.tlAlumnoDesktop.Size = new System.Drawing.Size(458, 136);
             this.tlAlumnoDesktop.TabIndex = 0;
             // 
             // lblID
@@ -110,7 +111,7 @@
             // 
             this.lblNombre.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(267, 32);
+            this.lblNombre.Location = new System.Drawing.Point(268, 32);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(47, 13);
             this.lblNombre.TabIndex = 2;
@@ -136,7 +137,7 @@
             // txtNombre
             // 
             this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtNombre.Location = new System.Drawing.Point(320, 29);
+            this.txtNombre.Location = new System.Drawing.Point(321, 29);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 5;
@@ -155,7 +156,7 @@
             // 
             this.lblEmail.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(279, 58);
+            this.lblEmail.Location = new System.Drawing.Point(280, 58);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(35, 13);
             this.lblEmail.TabIndex = 7;
@@ -172,7 +173,7 @@
             // txtEmail
             // 
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtEmail.Location = new System.Drawing.Point(320, 55);
+            this.txtEmail.Location = new System.Drawing.Point(321, 55);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(100, 20);
             this.txtEmail.TabIndex = 9;
@@ -191,7 +192,7 @@
             // 
             this.lblFechaNacimiento.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblFechaNacimiento.AutoSize = true;
-            this.lblFechaNacimiento.Location = new System.Drawing.Point(203, 84);
+            this.lblFechaNacimiento.Location = new System.Drawing.Point(204, 84);
             this.lblFechaNacimiento.Name = "lblFechaNacimiento";
             this.lblFechaNacimiento.Size = new System.Drawing.Size(111, 13);
             this.lblFechaNacimiento.TabIndex = 11;
@@ -207,7 +208,7 @@
             // 
             // dtpFechaNacimiento
             // 
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(320, 81);
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(321, 81);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(133, 20);
             this.dtpFechaNacimiento.TabIndex = 13;
@@ -216,7 +217,7 @@
             // 
             this.lblLegajo.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblLegajo.AutoSize = true;
-            this.lblLegajo.Location = new System.Drawing.Point(272, 6);
+            this.lblLegajo.Location = new System.Drawing.Point(273, 6);
             this.lblLegajo.Name = "lblLegajo";
             this.lblLegajo.Size = new System.Drawing.Size(42, 13);
             this.lblLegajo.TabIndex = 14;
@@ -225,7 +226,7 @@
             // txtLegajo
             // 
             this.txtLegajo.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtLegajo.Location = new System.Drawing.Point(320, 3);
+            this.txtLegajo.Location = new System.Drawing.Point(321, 3);
             this.txtLegajo.Name = "txtLegajo";
             this.txtLegajo.Size = new System.Drawing.Size(100, 20);
             this.txtLegajo.TabIndex = 15;
@@ -233,7 +234,7 @@
             // btnAceptar
             // 
             this.btnAceptar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAceptar.Location = new System.Drawing.Point(239, 107);
+            this.btnAceptar.Location = new System.Drawing.Point(240, 107);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
             this.btnAceptar.TabIndex = 16;
@@ -243,7 +244,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(320, 107);
+            this.btnCancelar.Location = new System.Drawing.Point(321, 107);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 17;

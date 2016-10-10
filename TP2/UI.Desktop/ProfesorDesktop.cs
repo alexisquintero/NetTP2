@@ -12,34 +12,33 @@ using Business.Logic;
 
 namespace UI.Desktop
 {
-    public partial class AlumnoDesktop : ApplicationForm
+    public partial class ProfesorDesktop : ApplicationForm
     {
-        public AlumnoDesktop()
+        public ProfesorDesktop()
         {
             InitializeComponent();
-            dtpFechaNacimiento.Value = DateTime.Today;  //Para que solo aparezca la fecha y no la hora
+            dtpFechaNacimiento.Value = DateTime.Today;
         }
-        public Business.Entities.Personas AlumnoActual { get; set; }
-        public AlumnoDesktop(ModoForm modo) : this()
+        public Business.Entities.Personas ProfesorActual { get; set; }
+        public ProfesorDesktop(ModoForm modo) : this()
         {
             Modo = modo;
         }
-        public AlumnoDesktop(int ID, ModoForm modo) : this()
+        public ProfesorDesktop(int ID, ModoForm modo) : this()
         {
             Modo = modo;
-            AlumnoActual = new PersonasLogic().GetOne(ID);
+            ProfesorActual = new ProfesorLogic().GetOne(ID);
             MapearDeDatos();
         }
         public override void MapearDeDatos()
         {
-            txtID.Text = AlumnoActual.ID.ToString();
-            txtLegajo.Text = AlumnoActual.Legajo.ToString();
-            txtApellido.Text = AlumnoActual.Apellido;
-            txtNombre.Text = AlumnoActual.Nombre;
-            txtDireccion.Text = AlumnoActual.Direccion;
-            txtEmail.Text = AlumnoActual.Email;
-            txtTelefono.Text = AlumnoActual.Telefono;
-            dtpFechaNacimiento.Value = AlumnoActual.FechaNacimiento;
+            txtID.Text = ProfesorActual.ID.ToString();
+            txtApellido.Text = ProfesorActual.Apellido;
+            txtNombre.Text = ProfesorActual.Nombre;
+            txtDireccion.Text = ProfesorActual.Direccion;
+            txtEmail.Text = ProfesorActual.Email;
+            txtTelefono.Text = ProfesorActual.Telefono;
+            dtpFechaNacimiento.Value = ProfesorActual.FechaNacimiento;
 
             if (Modo == ModoForm.Alta || Modo == ModoForm.Modificacion)
             {
@@ -58,39 +57,36 @@ namespace UI.Desktop
         {
             if (Modo == ModoForm.Alta)
             {
-                AlumnoActual = new Business.Entities.Personas();
-                AlumnoActual.State = Usuario.States.New;
+                ProfesorActual = new Business.Entities.Personas();
+                ProfesorActual.State = Usuario.States.New;
             }
             if (Modo == ModoForm.Alta || Modo == ModoForm.Modificacion)
             {
-                AlumnoActual.Legajo = Int32.Parse(txtLegajo.Text);
-                AlumnoActual.Apellido = txtApellido.Text;
-                AlumnoActual.Nombre = txtNombre.Text;
-                AlumnoActual.Direccion = txtDireccion.Text;
-                AlumnoActual.Email = txtEmail.Text;
-                AlumnoActual.Telefono = txtTelefono.Text;
-                AlumnoActual.FechaNacimiento = dtpFechaNacimiento.Value;
+                ProfesorActual.Apellido = txtApellido.Text;
+                ProfesorActual.Nombre = txtNombre.Text;
+                ProfesorActual.Direccion = txtDireccion.Text;
+                ProfesorActual.Email = txtEmail.Text;
+                ProfesorActual.Telefono = txtTelefono.Text;
+                ProfesorActual.FechaNacimiento = dtpFechaNacimiento.Value;
             }
             if (Modo == ModoForm.Modificacion)
             {
-                AlumnoActual.State = Business.Entities.Personas.States.Modified;
+                ProfesorActual.State = Business.Entities.Personas.States.Modified;
             }
             if (Modo == ModoForm.Consulta)
             {
-                AlumnoActual.State = Business.Entities.Personas.States.Unmodified;
+                ProfesorActual.State = Business.Entities.Personas.States.Unmodified;
             }
             if (Modo == ModoForm.Baja)
             {
-                AlumnoActual.State = Business.Entities.Personas.States.Deleted;
-            }
+                ProfesorActual.State = Business.Entities.Personas.States.Deleted;
+            }                      
         }
         public override bool Validar()
         {
             bool valida = false;
             string mensaje = "";
 
-            if (txtLegajo.Text.Trim() == "")
-                mensaje += "El legajo no puede estar en blanco" + "\n";
             if (txtNombre.Text.Trim() == "")
                 mensaje += "El nombre no puede estar en blanco" + "\n";
             if (txtApellido.Text.Trim() == "")
@@ -119,7 +115,7 @@ namespace UI.Desktop
         public override void GuardarCambios()
         {
             MapearADatos();
-            new PersonasLogic().Save(AlumnoActual);
+            new PersonasLogic().Save(ProfesorActual);
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)

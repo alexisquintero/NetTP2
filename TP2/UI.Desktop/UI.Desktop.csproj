@@ -173,6 +173,18 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProfesorDesktop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfesorDesktop.Designer.cs">
+      <DependentUpon>ProfesorDesktop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profesores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profesores.Designer.cs">
+      <DependentUpon>Profesores.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsuarioDesktop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,6 +252,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfesorDesktop.resx">
+      <DependentUpon>ProfesorDesktop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profesores.resx">
+      <DependentUpon>Profesores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UsuarioDesktop.resx">
       <DependentUpon>UsuarioDesktop.cs</DependentUpon>

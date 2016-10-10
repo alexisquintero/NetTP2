@@ -158,3 +158,5 @@ I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.MateriaDesktop.resource
 I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.CursoDesktop.resources
 I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.AlumnoDesktop.resources
 I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.Alumnos.resources
+I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.Profesores.resources
+I:\UTN\Net\tp\NetTP2\TP2\UI.Desktop\obj\Debug\UI.Desktop.ProfesorDesktop.resources
