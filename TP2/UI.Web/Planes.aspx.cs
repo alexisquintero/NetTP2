@@ -9,39 +9,40 @@ using Business.Logic;
 
 namespace UI.Web
 {
-    public partial class Usuarios2 : ApplicationForm
+    public partial class Planes : ApplicationForm
     {
         protected new void Page_Load(object sender, EventArgs e)
         {
-            this.LoadGrid();
+            LoadGrid();
         }
-        UsuarioLogic _logic;
-        private UsuarioLogic Logic
+        PlanLogic _logic;
+        private PlanLogic Logic
         {
             get
             {
                 if (_logic == null)
                 {
-                    _logic = new UsuarioLogic();
+                    _logic = new PlanLogic();
                 }
                 return _logic;
             }
         }
-        public Usuario Entity { get; set; }
         private void LoadGrid()
         {
             this.gridView.DataSource = this.Logic.GetAll();
             this.gridView.DataBind();
         }
+        public Plan Entity { get; set; }
 
+        protected void gridView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.SelectedID = (int)this.gridView.SelectedValue;
+        }
         private void LoadForm(int id)
         {
             this.Entity = this.Logic.GetOne(id);
-            this.nombreTextBox.Text = this.Entity.Nombre;
-            this.apellidoTextBox.Text = this.Entity.Apellido;
-            this.emailTextBox.Text = this.Entity.Email;
-            this.habilitadoCheckBox.Checked = this.Entity.Habilitado;
-            this.nombreUsuarioTextBox.Text = this.Entity.NombreUsuario;
+            this.descripcionTextBox.Text = this.Entity.Descripcion;
+            this.idEspecialidadTextBox.Text = this.Entity.IDEspecialidad.ToString();
         }
 
         protected void editarLinkButton_Click(object sender, EventArgs e)
@@ -54,43 +55,34 @@ namespace UI.Web
                 this.EnableForm(true);
             }
         }
-
-        protected void gridView_SelectedIndexChanged1(object sender, EventArgs e)   //Tiene el 1 porque había creado el método desde el código y hay que cambiarlo en la partial class
+        private void LoadEntity(Plan plan)
         {
-            this.SelectedID = (int)this.gridView.SelectedValue;
+            plan.Descripcion = descripcionTextBox.Text;
+            plan.IDEspecialidad = Int32.Parse(idEspecialidadTextBox.Text);
         }
-        private void LoadEntity(Usuario usuario)
+        private void SaveEntity(Plan plan)
         {
-            usuario.Nombre = this.nombreTextBox.Text;
-            usuario.Apellido = this.apellidoTextBox.Text;
-            usuario.Email = this.emailTextBox.Text;
-            usuario.NombreUsuario = this.nombreUsuarioTextBox.Text;           
-            usuario.Clave = this.claveTextBox.Text;
-            usuario.Habilitado = this.habilitadoCheckBox.Checked;
-        }
-        private void SaveEntity(Usuario usuario)
-        {
-            this.Logic.Save(usuario);
+            this.Logic.Save(plan);
         }
 
         protected void aceptarLinkButton_Click(object sender, EventArgs e)
         {
-            switch (this.FormMode)
+            switch (FormMode)
             {
+                case FormModes.Alta:
+                    this.Entity = new Plan();
+                    this.LoadEntity(this.Entity);
+                    this.SaveEntity(this.Entity);
+                    this.LoadGrid();
+                    break;
                 case FormModes.Baja:
                     this.DeleteEntity(this.SelectedID);
                     this.LoadGrid();
                     break;
                 case FormModes.Modificacion:
-                    this.Entity = new Usuario();
+                    this.Entity = new Plan();
                     this.Entity.ID = this.SelectedID;
                     this.Entity.State = BusinessEntity.States.Modified;
-                    this.LoadEntity(this.Entity);
-                    this.SaveEntity(this.Entity);
-                    this.LoadGrid();
-                    break;
-                case FormModes.Alta:
-                    this.Entity = new Usuario();
                     this.LoadEntity(this.Entity);
                     this.SaveEntity(this.Entity);
                     this.LoadGrid();
@@ -98,19 +90,14 @@ namespace UI.Web
                 default:
                     break;
             }
-            this.formPanel.Visible = false;
+            this.formPanel.Visible = false;    
         }
         private void EnableForm(bool enable)
         {
-            this.nombreTextBox.Enabled = enable;
-            this.apellidoTextBox.Enabled = enable;
-            this.emailTextBox.Enabled = enable;
-            this.nombreUsuarioTextBox.Enabled = enable;
-            this.claveTextBox.Visible = enable;
-            this.claveLabel.Visible = enable;
-            this.repetirClaveTextbox.Visible = enable;
-            this.repetirClaveLabel.Visible = enable;
+            this.descripcionTextBox.Enabled = enable;
+            this.idEspecialidadTextBox.Enabled = enable;
         }
+
         protected void eliminarLinkButton_Click(object sender, EventArgs e)
         {
             if (this.IsEntitySelected)
@@ -135,11 +122,8 @@ namespace UI.Web
         }
         private void ClearForm()
         {
-            this.nombreTextBox.Text = string.Empty;
-            this.apellidoTextBox.Text = string.Empty;
-            this.emailTextBox.Text = string.Empty;
-            this.habilitadoCheckBox.Checked = false;
-            this.nombreUsuarioTextBox.Text = string.Empty;
+            this.descripcionTextBox.Text = string.Empty;
+            this.idEspecialidadTextBox.Text = string.Empty;
         }
 
         protected void cancelarLinkButton_Click(object sender, EventArgs e)
