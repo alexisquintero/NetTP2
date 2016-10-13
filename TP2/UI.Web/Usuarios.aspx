@@ -6,7 +6,7 @@
                 <Columns>
                     <asp:BoundField HeaderText="Nombre" DataField="Nombre" />
                     <asp:BoundField HeaderText="Apellido" DataField="Apellido" />
-                    <asp:BoundField HeaderText="EMail" DataField="EMail" />
+                    <asp:BoundField HeaderText="Email" DataField="EMail" />
                     <asp:BoundField HeaderText="Usuario" DataField="NombreUsuario" />
                     <asp:BoundField HeaderText="Habilitado" DataField="Habilitado" />
                     <asp:CommandField SelectText="Seleccionar" ShowSelectButton="True" />

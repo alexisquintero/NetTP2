@@ -31,4 +31,3 @@ I:\UTN\Net\tp\NetTP2\TP2\Business.Entities\bin\Debug\Business.Entities.dll
 I:\UTN\Net\tp\NetTP2\TP2\Business.Entities\bin\Debug\Business.Entities.pdb
 I:\UTN\Net\tp\NetTP2\TP2\Business.Entities\obj\Debug\Business.Entities.dll
 I:\UTN\Net\tp\NetTP2\TP2\Business.Entities\obj\Debug\Business.Entities.pdb
-I:\UTN\Net\tp\NetTP2\TP2\Business.Entities\obj\Debug\Business.Entities.csprojResolveAssemblyReference.cache

@@ -5,6 +5,7 @@
         <siteMapNode url="~/Planes.aspx" title="Planes"  description="Planes" />
         <siteMapNode url="~/Especialidades.aspx" title="Especialidades"  description="Especialidades" />
         <siteMapNode url="~/Materias.aspx" title="Materias"  description="Materias" />
+        <siteMapNode url="~/Comisiones.aspx" title="Comisiones"  description="Comisiones" />
         <siteMapNode url="" title=""  description="" />
     </siteMapNode>
 </siteMap>
