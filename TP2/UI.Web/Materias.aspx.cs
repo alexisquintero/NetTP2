@@ -138,7 +138,8 @@ namespace UI.Web
         {
             this.LoadGrid();
             this.formPanel.Visible = false;
-            //TODO: resetear seleccionado en grilla
+            this.ViewState["SelectedID"] = null;
+            gridView.SelectedIndex = -1;
         }
     }
 }

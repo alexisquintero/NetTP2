@@ -50,6 +50,7 @@ namespace Data.Database
             Curso cur = new Curso();
             try
             {
+                this.OpenConnection();
                 SqlCommand cmdCurso = new SqlCommand("SELECT * FROM cursos WHERE id_curso = @id", SqlConn);
                 cmdCurso.Parameters.Add("@id", SqlDbType.Int).Value = ID;
                 SqlDataReader drCurso = cmdCurso.ExecuteReader();

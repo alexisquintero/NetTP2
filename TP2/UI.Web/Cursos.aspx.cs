@@ -9,30 +9,30 @@ using Business.Logic;
 
 namespace UI.Web
 {
-    public partial class Comisiones : ApplicationForm
+    public partial class Cursos : ApplicationForm
     {
         protected new void Page_Load(object sender, EventArgs e)
         {
-            this.LoadGrid();
+            LoadGrid();
         }
-        ComisionLogic _logic;
-        private ComisionLogic Logic
+        CursoLogic _logic;
+        private CursoLogic Logic
         {
             get
             {
                 if (_logic == null)
                 {
-                    _logic = new ComisionLogic();
+                    _logic = new CursoLogic();
                 }
                 return _logic;
             }
         }
-        public Comision Entity { get; set; }
         private void LoadGrid()
         {
             this.gridView.DataSource = this.Logic.GetAll();
             this.gridView.DataBind();
         }
+        public Curso Entity { get; set; }
 
         protected void gridView_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -42,8 +42,10 @@ namespace UI.Web
         {
             this.Entity = this.Logic.GetOne(id);
             this.descripcionTextBox.Text = this.Entity.Descripcion;
-            this.anioEspecialidadTextBox.Text = this.Entity.AnioEspecialidad.ToString();
-            this.idPlanTextBox.Text = this.Entity.IDPlan.ToString();
+            this.anioCalendarioTextBox.Text = this.Entity.AnioCalendario.ToString();
+            this.cupoTextBox.Text = this.Entity.Cupo.ToString();
+            this.idComisionTextBox.Text = this.Entity.IDComision.ToString();
+            this.idMateriaTextBox.Text = this.Entity.IDMateria.ToString();
         }
 
         protected void editarLinkButton_Click(object sender, EventArgs e)
@@ -59,18 +61,22 @@ namespace UI.Web
         private void EnableForm(bool enable)
         {
             this.descripcionTextBox.Enabled = enable;
-            this.anioEspecialidadTextBox.Enabled = enable;
-            this.idPlanTextBox.Enabled = enable;
+            this.anioCalendarioTextBox.Enabled = enable;
+            this.cupoTextBox.Enabled = enable;
+            this.idMateriaTextBox.Enabled = enable;
+            this.idComisionTextBox.Enabled = enable;
         }
-        private void LoadEntity(Comision comision)
+        private void LoadEntity(Curso curso)
         {
-            comision.Descripcion = this.descripcionTextBox.Text;
-            comision.AnioEspecialidad = Int32.Parse(this.anioEspecialidadTextBox.Text);
-            comision.IDPlan = Int32.Parse(this.idPlanTextBox.Text);
+            curso.Descripcion = this.descripcionTextBox.Text;
+            curso.AnioCalendario = Int32.Parse(this.anioCalendarioTextBox.Text);
+            curso.Cupo = Int32.Parse(this.cupoTextBox.Text);
+            curso.IDComision = Int32.Parse(this.idComisionTextBox.Text);
+            curso.IDMateria = Int32.Parse(this.idMateriaTextBox.Text);
         }
-        private void SaveEntity(Comision comision)
+        private void SaveEntity(Curso curso)
         {
-            this.Logic.Save(comision);
+            this.Logic.Save(curso);
         }
 
         protected void aceptarLinkButton_Click(object sender, EventArgs e)
@@ -82,7 +88,7 @@ namespace UI.Web
                     this.LoadGrid();
                     break;
                 case FormModes.Modificacion:
-                    this.Entity = new Comision();
+                    this.Entity = new Curso();
                     this.Entity.ID = this.SelectedID;
                     this.Entity.State = BusinessEntity.States.Modified;
                     this.LoadEntity(this.Entity);
@@ -90,7 +96,7 @@ namespace UI.Web
                     this.LoadGrid();
                     break;
                 case FormModes.Alta:
-                    this.Entity = new Comision();
+                    this.Entity = new Curso();
                     this.LoadEntity(this.Entity);
                     this.SaveEntity(this.Entity);
                     this.LoadGrid();
@@ -126,8 +132,10 @@ namespace UI.Web
         private void ClearForm()
         {
             this.descripcionTextBox.Text = string.Empty;
-            this.anioEspecialidadTextBox.Text = string.Empty;
-            this.idPlanTextBox.Text = string.Empty;
+            this.anioCalendarioTextBox.Text = string.Empty;
+            this.cupoTextBox.Text = string.Empty;
+            this.idMateriaTextBox.Text = string.Empty;
+            this.idComisionTextBox.Text = string.Empty;
         }
 
         protected void cancelarLinkButton_Click(object sender, EventArgs e)
@@ -137,5 +145,5 @@ namespace UI.Web
             this.ViewState["SelectedID"] = null;
             gridView.SelectedIndex = -1;
         }
-    }    
+    }
 }
