@@ -83,6 +83,7 @@ namespace UI.Desktop
             {
                 AlumnoActual.State = Business.Entities.Personas.States.Deleted;
             }
+            AlumnoActual.TipoPersona = Business.Entities.Personas.TiposPersonas.Alumno;
         }
         public override bool Validar()
         {

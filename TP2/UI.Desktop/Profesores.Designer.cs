@@ -30,11 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profesores));
             this.tcProfesores = new System.Windows.Forms.ToolStripContainer();
-            this.tsProfesores = new System.Windows.Forms.ToolStrip();
             this.tlProfesores = new System.Windows.Forms.TableLayoutPanel();
             this.dgvProfesores = new System.Windows.Forms.DataGridView();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.legajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,15 +41,18 @@
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idPlan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.tsProfesores = new System.Windows.Forms.ToolStrip();
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.tsbEditar = new System.Windows.Forms.ToolStripButton();
             this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
             this.tcProfesores.ContentPanel.SuspendLayout();
             this.tcProfesores.TopToolStripPanel.SuspendLayout();
             this.tcProfesores.SuspendLayout();
-            this.tsProfesores.SuspendLayout();
             this.tlProfesores.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProfesores)).BeginInit();
+            this.tsProfesores.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcProfesores
@@ -61,29 +61,17 @@
             // tcProfesores.ContentPanel
             // 
             this.tcProfesores.ContentPanel.Controls.Add(this.tlProfesores);
-            this.tcProfesores.ContentPanel.Size = new System.Drawing.Size(477, 384);
+            this.tcProfesores.ContentPanel.Size = new System.Drawing.Size(959, 384);
             this.tcProfesores.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcProfesores.Location = new System.Drawing.Point(0, 0);
             this.tcProfesores.Name = "tcProfesores";
-            this.tcProfesores.Size = new System.Drawing.Size(477, 409);
+            this.tcProfesores.Size = new System.Drawing.Size(959, 409);
             this.tcProfesores.TabIndex = 0;
             this.tcProfesores.Text = "toolStripContainer1";
             // 
             // tcProfesores.TopToolStripPanel
             // 
             this.tcProfesores.TopToolStripPanel.Controls.Add(this.tsProfesores);
-            // 
-            // tsProfesores
-            // 
-            this.tsProfesores.Dock = System.Windows.Forms.DockStyle.None;
-            this.tsProfesores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsbNuevo,
-            this.tsbEditar,
-            this.tsbEliminar});
-            this.tsProfesores.Location = new System.Drawing.Point(3, 0);
-            this.tsProfesores.Name = "tsProfesores";
-            this.tsProfesores.Size = new System.Drawing.Size(112, 25);
-            this.tsProfesores.TabIndex = 0;
             // 
             // tlProfesores
             // 
@@ -99,7 +87,7 @@
             this.tlProfesores.RowCount = 2;
             this.tlProfesores.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlProfesores.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tlProfesores.Size = new System.Drawing.Size(477, 384);
+            this.tlProfesores.Size = new System.Drawing.Size(959, 384);
             this.tlProfesores.TabIndex = 0;
             // 
             // dgvProfesores
@@ -122,29 +110,8 @@
             this.dgvProfesores.Location = new System.Drawing.Point(3, 3);
             this.dgvProfesores.Name = "dgvProfesores";
             this.dgvProfesores.ReadOnly = true;
-            this.dgvProfesores.Size = new System.Drawing.Size(471, 349);
+            this.dgvProfesores.Size = new System.Drawing.Size(953, 349);
             this.dgvProfesores.TabIndex = 0;
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnActualizar.Location = new System.Drawing.Point(318, 358);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizar.TabIndex = 1;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(399, 358);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
-            this.btnSalir.TabIndex = 2;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // id
             // 
@@ -209,6 +176,39 @@
             this.idPlan.Name = "idPlan";
             this.idPlan.ReadOnly = true;
             // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnActualizar.Location = new System.Drawing.Point(800, 358);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.TabIndex = 1;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(881, 358);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 2;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // tsProfesores
+            // 
+            this.tsProfesores.Dock = System.Windows.Forms.DockStyle.None;
+            this.tsProfesores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsbNuevo,
+            this.tsbEditar,
+            this.tsbEliminar});
+            this.tsProfesores.Location = new System.Drawing.Point(3, 0);
+            this.tsProfesores.Name = "tsProfesores";
+            this.tsProfesores.Size = new System.Drawing.Size(81, 25);
+            this.tsProfesores.TabIndex = 0;
+            // 
             // tsbNuevo
             // 
             this.tsbNuevo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -243,7 +243,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(477, 409);
+            this.ClientSize = new System.Drawing.Size(959, 409);
             this.Controls.Add(this.tcProfesores);
             this.Name = "Profesores";
             this.Text = "Profesores";
@@ -253,10 +253,10 @@
             this.tcProfesores.TopToolStripPanel.PerformLayout();
             this.tcProfesores.ResumeLayout(false);
             this.tcProfesores.PerformLayout();
-            this.tsProfesores.ResumeLayout(false);
-            this.tsProfesores.PerformLayout();
             this.tlProfesores.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProfesores)).EndInit();
+            this.tsProfesores.ResumeLayout(false);
+            this.tsProfesores.PerformLayout();
             this.ResumeLayout(false);
 
         }

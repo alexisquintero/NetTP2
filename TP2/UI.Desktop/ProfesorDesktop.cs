@@ -58,6 +58,7 @@ namespace UI.Desktop
             if (Modo == ModoForm.Alta)
             {
                 ProfesorActual = new Business.Entities.Personas();
+                ProfesorActual.Legajo = 0;  //Para que no tenga problemas al hacer get all de la base de datos
                 ProfesorActual.State = Usuario.States.New;
             }
             if (Modo == ModoForm.Alta || Modo == ModoForm.Modificacion)
@@ -80,7 +81,8 @@ namespace UI.Desktop
             if (Modo == ModoForm.Baja)
             {
                 ProfesorActual.State = Business.Entities.Personas.States.Deleted;
-            }                      
+            }
+            ProfesorActual.TipoPersona = Business.Entities.Personas.TiposPersonas.Docente;                   
         }
         public override bool Validar()
         {

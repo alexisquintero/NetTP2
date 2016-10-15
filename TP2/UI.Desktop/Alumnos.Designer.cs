@@ -38,6 +38,15 @@
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.tsbEditar = new System.Windows.Forms.ToolStripButton();
             this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.legajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idPlan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tcAlumnos.ContentPanel.SuspendLayout();
             this.tcAlumnos.TopToolStripPanel.SuspendLayout();
             this.tcAlumnos.SuspendLayout();
@@ -52,11 +61,11 @@
             // tcAlumnos.ContentPanel
             // 
             this.tcAlumnos.ContentPanel.Controls.Add(this.tlAlumnos);
-            this.tcAlumnos.ContentPanel.Size = new System.Drawing.Size(494, 386);
+            this.tcAlumnos.ContentPanel.Size = new System.Drawing.Size(914, 386);
             this.tcAlumnos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcAlumnos.Location = new System.Drawing.Point(0, 0);
             this.tcAlumnos.Name = "tcAlumnos";
-            this.tcAlumnos.Size = new System.Drawing.Size(494, 411);
+            this.tcAlumnos.Size = new System.Drawing.Size(914, 411);
             this.tcAlumnos.TabIndex = 0;
             this.tcAlumnos.Text = "toolStripContainer1";
             // 
@@ -78,7 +87,7 @@
             this.tlAlumnos.RowCount = 2;
             this.tlAlumnos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlAlumnos.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tlAlumnos.Size = new System.Drawing.Size(494, 386);
+            this.tlAlumnos.Size = new System.Drawing.Size(914, 386);
             this.tlAlumnos.TabIndex = 0;
             // 
             // dgvAlumnos
@@ -86,18 +95,28 @@
             this.dgvAlumnos.AllowUserToAddRows = false;
             this.dgvAlumnos.AllowUserToDeleteRows = false;
             this.dgvAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAlumnos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.legajo,
+            this.apellido,
+            this.nombre,
+            this.direccion,
+            this.email,
+            this.telefono,
+            this.fechaNacimiento,
+            this.idPlan});
             this.tlAlumnos.SetColumnSpan(this.dgvAlumnos, 2);
             this.dgvAlumnos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvAlumnos.Location = new System.Drawing.Point(3, 3);
             this.dgvAlumnos.Name = "dgvAlumnos";
             this.dgvAlumnos.ReadOnly = true;
-            this.dgvAlumnos.Size = new System.Drawing.Size(488, 351);
+            this.dgvAlumnos.Size = new System.Drawing.Size(908, 351);
             this.dgvAlumnos.TabIndex = 0;
             // 
             // btnActualizar
             // 
             this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnActualizar.Location = new System.Drawing.Point(335, 360);
+            this.btnActualizar.Location = new System.Drawing.Point(755, 360);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(75, 23);
             this.btnActualizar.TabIndex = 1;
@@ -107,7 +126,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(416, 360);
+            this.btnSalir.Location = new System.Drawing.Point(836, 360);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 2;
@@ -124,7 +143,7 @@
             this.tsbEliminar});
             this.tsAlumnos.Location = new System.Drawing.Point(3, 0);
             this.tsAlumnos.Name = "tsAlumnos";
-            this.tsAlumnos.Size = new System.Drawing.Size(112, 25);
+            this.tsAlumnos.Size = new System.Drawing.Size(81, 25);
             this.tsAlumnos.TabIndex = 0;
             // 
             // tsbNuevo
@@ -157,11 +176,74 @@
             this.tsbEliminar.Text = "Eliminar";
             this.tsbEliminar.Click += new System.EventHandler(this.tsbEliminar_Click);
             // 
+            // id
+            // 
+            this.id.DataPropertyName = "ID";
+            this.id.HeaderText = "ID";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            // 
+            // legajo
+            // 
+            this.legajo.DataPropertyName = "Legajo";
+            this.legajo.HeaderText = "Legajo";
+            this.legajo.Name = "legajo";
+            this.legajo.ReadOnly = true;
+            // 
+            // apellido
+            // 
+            this.apellido.DataPropertyName = "Apellido";
+            this.apellido.HeaderText = "Apellido";
+            this.apellido.Name = "apellido";
+            this.apellido.ReadOnly = true;
+            // 
+            // nombre
+            // 
+            this.nombre.DataPropertyName = "Nombre";
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            // 
+            // direccion
+            // 
+            this.direccion.DataPropertyName = "Direccion";
+            this.direccion.HeaderText = "Direccion";
+            this.direccion.Name = "direccion";
+            this.direccion.ReadOnly = true;
+            // 
+            // email
+            // 
+            this.email.DataPropertyName = "Email";
+            this.email.HeaderText = "Email";
+            this.email.Name = "email";
+            this.email.ReadOnly = true;
+            // 
+            // telefono
+            // 
+            this.telefono.DataPropertyName = "Telefono";
+            this.telefono.HeaderText = "Telefono";
+            this.telefono.Name = "telefono";
+            this.telefono.ReadOnly = true;
+            // 
+            // fechaNacimiento
+            // 
+            this.fechaNacimiento.DataPropertyName = "FechaNacimiento";
+            this.fechaNacimiento.HeaderText = "Fecha de nacimiento";
+            this.fechaNacimiento.Name = "fechaNacimiento";
+            this.fechaNacimiento.ReadOnly = true;
+            // 
+            // idPlan
+            // 
+            this.idPlan.DataPropertyName = "IDPlan";
+            this.idPlan.HeaderText = "ID Plan";
+            this.idPlan.Name = "idPlan";
+            this.idPlan.ReadOnly = true;
+            // 
             // Alumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(494, 411);
+            this.ClientSize = new System.Drawing.Size(914, 411);
             this.Controls.Add(this.tcAlumnos);
             this.Name = "Alumnos";
             this.Text = "Alumnos";
@@ -190,5 +272,14 @@
         private System.Windows.Forms.ToolStripButton tsbNuevo;
         private System.Windows.Forms.ToolStripButton tsbEditar;
         private System.Windows.Forms.ToolStripButton tsbEliminar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn legajo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn apellido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaNacimiento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idPlan;
     }
 }
