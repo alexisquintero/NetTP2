@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Alumnos" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Alumnos.aspx.cs" Inherits="UI.Web.Alumnos" %>
+﻿<%@ Page Title="Profesores" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Profesores.aspx.cs" Inherits="UI.Web.Profesores" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="bodyContentPlaceHolder" runat="server">
@@ -20,9 +20,6 @@
     </asp:Panel>
 
     <asp:Panel ID="formPanel" runat="server" Visible="False">
-        <asp:Label ID="legajoLabel" runat="server" Text="Legajo:"></asp:Label>
-        <asp:TextBox ID="legajoTextBox" runat="server"></asp:TextBox>
-        <br />
         <asp:Label ID="apellidoLabel" runat="server" Text="Apellido:"></asp:Label>
         <asp:TextBox ID="apellidoTextBox" runat="server"></asp:TextBox>
         <br />
@@ -46,13 +43,13 @@
     </asp:Panel>
 
     <asp:Panel ID="gridActionsPanel" runat="server">
-        <asp:LinkButton ID="editarLinkButton" runat="server" OnClick="editarLinkButton_Click">Editar</asp:LinkButton>
+        <asp:LinkButton ID="editarLinkButton" runat="server" OnClick="editarLinkButton_Click" >Editar</asp:LinkButton>
         <asp:LinkButton ID="eliminarLinkButton" runat="server" OnClick="eliminarLinkButton_Click">Eliminar</asp:LinkButton>
-        <asp:LinkButton ID="nuevoLinkButton" runat="server" OnClick="nuevoLinkButton_Click">Nuevo</asp:LinkButton>
+        <asp:LinkButton ID="nuevoLinkButton" runat="server" OnClick="nuevoLinkButton_Click" >Nuevo</asp:LinkButton>
     </asp:Panel>
 
     <asp:Panel ID="formActionsPanel" runat="server">
-        <asp:LinkButton ID="aceptarLinkButton" runat="server" OnClick="aceptarLinkButton_Click">Aceptar</asp:LinkButton>
-        <asp:LinkButton ID="cancelarLinkButton" runat="server" OnClick="cancelarLinkButton_Click">Cancelar</asp:LinkButton>
+        <asp:LinkButton ID="aceptarLinkButton" runat="server" OnClick="aceptarLinkButton_Click" >Aceptar</asp:LinkButton>
+        <asp:LinkButton ID="cancelarLinkButton" runat="server" OnClick="cancelarLinkButton_Click" >Cancelar</asp:LinkButton>
     </asp:Panel>
 </asp:Content>
