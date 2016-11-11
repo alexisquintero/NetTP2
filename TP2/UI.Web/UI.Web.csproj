@@ -60,6 +60,15 @@
   <ItemGroup>
     <Content Include="Alumnos.aspx" />
     <Content Include="ApplicationForm.aspx" />
+    <Content Include="App_Themes\Visualize\assets\css\font-awesome.min.css" />
+    <Content Include="App_Themes\Visualize\assets\css\main.css" />
+    <Content Include="App_Themes\Visualize\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="App_Themes\Visualize\assets\js\jquery.min.js" />
+    <Content Include="App_Themes\Visualize\assets\js\jquery.poptrox.min.js" />
+    <Content Include="App_Themes\Visualize\assets\js\main.js" />
+    <Content Include="App_Themes\Visualize\assets\js\skel.min.js" />
+    <Content Include="App_Themes\Visualize\index.html" />
+    <Content Include="App_Themes\Visualize\LICENSE.txt" />
     <Content Include="Comisiones.aspx" />
     <Content Include="Cursos.aspx" />
     <Content Include="Default.aspx" />
@@ -68,6 +77,11 @@
     <Content Include="Planes.aspx" />
     <Content Include="Profesores.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="App_Themes\Visualize\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="App_Themes\Visualize\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="App_Themes\Visualize\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="App_Themes\Visualize\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="App_Themes\Visualize\assets\fonts\FontAwesome.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -172,6 +186,7 @@
       <Name>Business.Logic</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
