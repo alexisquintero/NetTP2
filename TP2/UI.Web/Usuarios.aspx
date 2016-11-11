@@ -14,26 +14,34 @@
             </asp:GridView>
         </asp:Panel>
 
-        <asp:Panel ID="formPanel" Visible="false" runat="server">
+        <asp:Panel ID="formPanel" Visible="False" runat="server">
             <asp:Label ID="nombreLabel" runat="server" Text="Nombre: "></asp:Label>
             <asp:TextBox ID="nombreTextBox" runat="server" ></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvNombre" runat="server" ControlToValidate="nombreTextBox" Display="Dynamic" ErrorMessage="El nombre no puede estar en blanco">*</asp:RequiredFieldValidator>
             <br />
             <asp:Label ID="apellidoLabel" runat="server" Text="Apellido: "></asp:Label>
             <asp:TextBox ID="apellidoTextBox" runat="server" ></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvApellido" runat="server" ControlToValidate="apellidoTextBox" Display="Dynamic" ErrorMessage="El apellido no puede estar en blanco">*</asp:RequiredFieldValidator>
             <br />
             <asp:Label ID="emailLabel" runat="server" Text="EMail: "></asp:Label>
             <asp:TextBox ID="emailTextBox" runat="server" ></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="emailTextBox" Display="Dynamic" ErrorMessage="El email no puede estar en blanco">*</asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="emailTextBox" Display="Dynamic" ErrorMessage="Formato de EMail incorrecto" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">Formato incorrecto</asp:RegularExpressionValidator>
             <br />
             <asp:Label ID="habilitadoLabel" runat="server" Text="Habilitado: "></asp:Label>
             <asp:CheckBox ID="habilitadoCheckBox" runat="server" ></asp:CheckBox>
             <asp:Label ID="nombreUsuarioLabel" runat="server" Text="Usuario: "></asp:Label>
             <asp:TextBox ID="nombreUsuarioTextBox" runat="server" ></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvUsuario" runat="server" ControlToValidate="nombreUsuarioTextBox" Display="Dynamic" ErrorMessage="El usuario no puede estar en blanco">*</asp:RequiredFieldValidator>
             <br />
             <asp:Label ID="claveLabel" runat="server" Text="Clave: "></asp:Label>
             <asp:TextBox ID="claveTextBox" TextMode="Password" runat="server" ></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvClave" runat="server" ControlToValidate="claveTextBox" Display="Dynamic" ErrorMessage="La clave no puede estar en blanco">*</asp:RequiredFieldValidator>
             <br />
             <asp:Label ID="repetirClaveLabel" runat="server" Text="Repetir Clave: "></asp:Label>
             <asp:TextBox ID="repetirClaveTextbox" TextMode="Password" runat="server" ></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvRepetirClave" runat="server" ControlToValidate="repetirClaveTextbox" Display="Dynamic" ErrorMessage="Repetir clave no puede estar en blanco">*</asp:RequiredFieldValidator>
+            <asp:CompareValidator ID="cvEmail" runat="server" ControlToCompare="claveTextBox" ControlToValidate="repetirClaveTextbox" Display="Dynamic" ErrorMessage="Las claves no son iguales">Las claves no son iguales</asp:CompareValidator>
             <br />
         </asp:Panel>
      

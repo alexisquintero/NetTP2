@@ -58,6 +58,15 @@ namespace UI.Web {
         protected global::System.Web.UI.WebControls.TextBox nombreTextBox;
         
         /// <summary>
+        /// rfvNombre control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNombre;
+        
+        /// <summary>
         /// apellidoLabel control.
         /// </summary>
         /// <remarks>
@@ -76,6 +85,15 @@ namespace UI.Web {
         protected global::System.Web.UI.WebControls.TextBox apellidoTextBox;
         
         /// <summary>
+        /// rfvApellido control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvApellido;
+        
+        /// <summary>
         /// emailLabel control.
         /// </summary>
         /// <remarks>
@@ -92,6 +110,24 @@ namespace UI.Web {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox emailTextBox;
+        
+        /// <summary>
+        /// rfvEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvEmail;
+        
+        /// <summary>
+        /// revEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revEmail;
         
         /// <summary>
         /// habilitadoLabel control.
@@ -130,6 +166,15 @@ namespace UI.Web {
         protected global::System.Web.UI.WebControls.TextBox nombreUsuarioTextBox;
         
         /// <summary>
+        /// rfvUsuario control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvUsuario;
+        
+        /// <summary>
         /// claveLabel control.
         /// </summary>
         /// <remarks>
@@ -148,6 +193,15 @@ namespace UI.Web {
         protected global::System.Web.UI.WebControls.TextBox claveTextBox;
         
         /// <summary>
+        /// rfvClave control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvClave;
+        
+        /// <summary>
         /// repetirClaveLabel control.
         /// </summary>
         /// <remarks>
@@ -164,6 +218,24 @@ namespace UI.Web {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox repetirClaveTextbox;
+        
+        /// <summary>
+        /// rfvRepetirClave control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRepetirClave;
+        
+        /// <summary>
+        /// cvEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cvEmail;
         
         /// <summary>
         /// gridActionsPanel control.
