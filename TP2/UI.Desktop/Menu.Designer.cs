@@ -41,9 +41,10 @@
             this.btnPersona = new System.Windows.Forms.Button();
             this.btnPlan = new System.Windows.Forms.Button();
             this.btnUsuario = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.btnAlumno = new System.Windows.Forms.Button();
             this.btnProfesor = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnInscripcion = new System.Windows.Forms.Button();
             this.tcMenu.ContentPanel.SuspendLayout();
             this.tcMenu.SuspendLayout();
             this.tlMenu.SuspendLayout();
@@ -82,6 +83,7 @@
             this.tlMenu.Controls.Add(this.btnAlumno, 1, 5);
             this.tlMenu.Controls.Add(this.btnProfesor, 0, 7);
             this.tlMenu.Controls.Add(this.btnSalir, 1, 8);
+            this.tlMenu.Controls.Add(this.btnInscripcion, 1, 7);
             this.tlMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlMenu.Location = new System.Drawing.Point(0, 0);
             this.tlMenu.Name = "tlMenu";
@@ -214,17 +216,6 @@
             this.btnUsuario.UseVisualStyleBackColor = true;
             this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
             // 
-            // btnSalir
-            // 
-            this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSalir.Location = new System.Drawing.Point(291, 206);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
-            this.btnSalir.TabIndex = 11;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
             // btnAlumno
             // 
             this.btnAlumno.Location = new System.Drawing.Point(187, 148);
@@ -245,6 +236,27 @@
             this.btnProfesor.Text = "Profesor";
             this.btnProfesor.UseVisualStyleBackColor = true;
             this.btnProfesor.Click += new System.EventHandler(this.btnProfesor_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSalir.Location = new System.Drawing.Point(291, 206);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 11;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnInscripcion
+            // 
+            this.btnInscripcion.Location = new System.Drawing.Point(187, 177);
+            this.btnInscripcion.Name = "btnInscripcion";
+            this.btnInscripcion.Size = new System.Drawing.Size(75, 23);
+            this.btnInscripcion.TabIndex = 14;
+            this.btnInscripcion.Text = "Inscripcion";
+            this.btnInscripcion.UseVisualStyleBackColor = true;
+            this.btnInscripcion.Click += new System.EventHandler(this.btnInscripcion_Click);
             // 
             // Menu
             // 
@@ -281,5 +293,6 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnAlumno;
         private System.Windows.Forms.Button btnProfesor;
+        private System.Windows.Forms.Button btnInscripcion;
     }
 }

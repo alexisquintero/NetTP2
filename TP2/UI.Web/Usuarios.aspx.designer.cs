@@ -238,6 +238,15 @@ namespace UI.Web {
         protected global::System.Web.UI.WebControls.CompareValidator cvEmail;
         
         /// <summary>
+        /// vsUsuarios control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary vsUsuarios;
+        
+        /// <summary>
         /// gridActionsPanel control.
         /// </summary>
         /// <remarks>

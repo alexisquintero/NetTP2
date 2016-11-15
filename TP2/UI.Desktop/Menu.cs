@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Business.Entities;
 
 namespace UI.Desktop
 {
     public partial class Menu : Form
     {
-        public Menu()
+        public static Business.Entities.Personas persona { get; set; }
+        public Menu(Business.Entities.Personas p)
         {
             InitializeComponent();
+            persona = p;
+            this.ocultarControles();
         }      
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -94,6 +98,46 @@ namespace UI.Desktop
         {
             Profesores profesores = new Profesores();
             profesores.ShowDialog();
+        }
+        private void ocultarControles()
+        {
+            switch (persona.TipoPersona)
+            {
+                case Business.Entities.Personas.TiposPersonas.Administrativo:
+                    btnInscripcion.Visible = false;
+                    break;
+                case Business.Entities.Personas.TiposPersonas.Alumno:
+                    btnEspecialidad.Visible = false;
+                    btnPlan.Visible = false;
+                    btnProfesor.Visible = false;
+                    btnAlumno.Visible = false;
+                    btnMateria.Visible = false;
+                    btnComision.Visible = false;
+                    btnCurso.Visible = false;
+                    btnDocenteCurso.Visible = false;
+                    btnModulo.Visible = false;
+                    btnModuloUsuario.Visible = false;
+                    btnAlumnoInscripcion.Visible = false;
+                    break;
+                case Business.Entities.Personas.TiposPersonas.Docente:
+                    btnEspecialidad.Visible = false;
+                    btnPlan.Visible = false;
+                    btnProfesor.Visible = false;
+                    btnAlumno.Visible = false;
+                    btnMateria.Visible = false;
+                    btnComision.Visible = false;
+                    btnInscripcion.Visible = false;
+                    btnAlumnoInscripcion.Visible = false;
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void btnInscripcion_Click(object sender, EventArgs e)
+        {
+            Inscripcion inscripcion = new Inscripcion();
+            inscripcion.ShowDialog();
         }
     }
 }

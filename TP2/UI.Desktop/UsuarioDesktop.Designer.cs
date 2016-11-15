@@ -46,16 +46,17 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtConfirmarClave = new System.Windows.Forms.TextBox();
             this.txtClave = new System.Windows.Forms.TextBox();
+            this.cbIdPersona = new System.Windows.Forms.ComboBox();
             this.tlUsuarioDesktop.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlUsuarioDesktop
             // 
             this.tlUsuarioDesktop.ColumnCount = 4;
-            this.tlUsuarioDesktop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.36979F));
-            this.tlUsuarioDesktop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.23958F));
-            this.tlUsuarioDesktop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.22917F));
-            this.tlUsuarioDesktop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.03125F));
+            this.tlUsuarioDesktop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlUsuarioDesktop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlUsuarioDesktop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlUsuarioDesktop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlUsuarioDesktop.Controls.Add(this.btnAceptar, 2, 4);
             this.tlUsuarioDesktop.Controls.Add(this.btnCancelar, 3, 4);
             this.tlUsuarioDesktop.Controls.Add(this.lblID, 0, 0);
@@ -73,22 +74,23 @@
             this.tlUsuarioDesktop.Controls.Add(this.txtUsuario, 3, 2);
             this.tlUsuarioDesktop.Controls.Add(this.txtConfirmarClave, 3, 3);
             this.tlUsuarioDesktop.Controls.Add(this.txtClave, 1, 3);
+            this.tlUsuarioDesktop.Controls.Add(this.cbIdPersona, 3, 0);
             this.tlUsuarioDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlUsuarioDesktop.Location = new System.Drawing.Point(0, 0);
             this.tlUsuarioDesktop.Name = "tlUsuarioDesktop";
             this.tlUsuarioDesktop.RowCount = 5;
-            this.tlUsuarioDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlUsuarioDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlUsuarioDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlUsuarioDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlUsuarioDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlUsuarioDesktop.Size = new System.Drawing.Size(768, 441);
+            this.tlUsuarioDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tlUsuarioDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tlUsuarioDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tlUsuarioDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tlUsuarioDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlUsuarioDesktop.Size = new System.Drawing.Size(665, 148);
             this.tlUsuarioDesktop.TabIndex = 1;
             // 
             // btnAceptar
             // 
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.Location = new System.Drawing.Point(384, 355);
+            this.btnAceptar.Location = new System.Drawing.Point(307, 111);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(80, 30);
             this.btnAceptar.TabIndex = 0;
@@ -99,7 +101,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(524, 355);
+            this.btnCancelar.Location = new System.Drawing.Point(429, 111);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(84, 30);
             this.btnCancelar.TabIndex = 1;
@@ -112,7 +114,7 @@
             this.lblID.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(3, 34);
+            this.lblID.Location = new System.Drawing.Point(3, 5);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(26, 20);
             this.lblID.TabIndex = 2;
@@ -123,7 +125,7 @@
             this.lblNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(3, 122);
+            this.lblNombre.Location = new System.Drawing.Point(3, 33);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(65, 20);
             this.lblNombre.TabIndex = 3;
@@ -134,7 +136,7 @@
             this.lblEmail.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(3, 210);
+            this.lblEmail.Location = new System.Drawing.Point(3, 59);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(48, 20);
             this.lblEmail.TabIndex = 4;
@@ -145,7 +147,7 @@
             this.lblClave.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblClave.AutoSize = true;
             this.lblClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClave.Location = new System.Drawing.Point(3, 298);
+            this.lblClave.Location = new System.Drawing.Point(3, 85);
             this.lblClave.Name = "lblClave";
             this.lblClave.Size = new System.Drawing.Size(48, 20);
             this.lblClave.TabIndex = 5;
@@ -156,7 +158,7 @@
             this.lblApellido.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblApellido.AutoSize = true;
             this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellido.Location = new System.Drawing.Point(384, 122);
+            this.lblApellido.Location = new System.Drawing.Point(307, 33);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(65, 20);
             this.lblApellido.TabIndex = 6;
@@ -167,7 +169,7 @@
             this.lblUsuario.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(384, 210);
+            this.lblUsuario.Location = new System.Drawing.Point(307, 59);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(64, 20);
             this.lblUsuario.TabIndex = 7;
@@ -178,7 +180,7 @@
             this.lblConfirmarClave.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblConfirmarClave.AutoSize = true;
             this.lblConfirmarClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfirmarClave.Location = new System.Drawing.Point(384, 298);
+            this.lblConfirmarClave.Location = new System.Drawing.Point(307, 85);
             this.lblConfirmarClave.Name = "lblConfirmarClave";
             this.lblConfirmarClave.Size = new System.Drawing.Size(116, 20);
             this.lblConfirmarClave.TabIndex = 8;
@@ -189,7 +191,7 @@
             this.chkHabilitado.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.chkHabilitado.AutoSize = true;
             this.chkHabilitado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkHabilitado.Location = new System.Drawing.Point(384, 32);
+            this.chkHabilitado.Location = new System.Drawing.Point(307, 3);
             this.chkHabilitado.Name = "chkHabilitado";
             this.chkHabilitado.Size = new System.Drawing.Size(99, 24);
             this.chkHabilitado.TabIndex = 9;
@@ -199,7 +201,7 @@
             // txtID
             // 
             this.txtID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtID.Location = new System.Drawing.Point(124, 34);
+            this.txtID.Location = new System.Drawing.Point(74, 5);
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(227, 20);
@@ -208,7 +210,7 @@
             // txtNombre
             // 
             this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNombre.Location = new System.Drawing.Point(124, 122);
+            this.txtNombre.Location = new System.Drawing.Point(74, 33);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(227, 20);
             this.txtNombre.TabIndex = 11;
@@ -216,7 +218,7 @@
             // txtEmail
             // 
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtEmail.Location = new System.Drawing.Point(124, 210);
+            this.txtEmail.Location = new System.Drawing.Point(74, 59);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(227, 20);
             this.txtEmail.TabIndex = 12;
@@ -224,7 +226,7 @@
             // txtApellido
             // 
             this.txtApellido.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtApellido.Location = new System.Drawing.Point(529, 122);
+            this.txtApellido.Location = new System.Drawing.Point(430, 33);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(230, 20);
             this.txtApellido.TabIndex = 14;
@@ -232,7 +234,7 @@
             // txtUsuario
             // 
             this.txtUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtUsuario.Location = new System.Drawing.Point(529, 210);
+            this.txtUsuario.Location = new System.Drawing.Point(430, 59);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(230, 20);
             this.txtUsuario.TabIndex = 15;
@@ -240,7 +242,7 @@
             // txtConfirmarClave
             // 
             this.txtConfirmarClave.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtConfirmarClave.Location = new System.Drawing.Point(529, 298);
+            this.txtConfirmarClave.Location = new System.Drawing.Point(430, 85);
             this.txtConfirmarClave.Name = "txtConfirmarClave";
             this.txtConfirmarClave.Size = new System.Drawing.Size(230, 20);
             this.txtConfirmarClave.TabIndex = 16;
@@ -248,16 +250,24 @@
             // txtClave
             // 
             this.txtClave.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtClave.Location = new System.Drawing.Point(124, 298);
+            this.txtClave.Location = new System.Drawing.Point(74, 85);
             this.txtClave.Name = "txtClave";
             this.txtClave.Size = new System.Drawing.Size(227, 20);
             this.txtClave.TabIndex = 13;
+            // 
+            // cbIdPersona
+            // 
+            this.cbIdPersona.FormattingEnabled = true;
+            this.cbIdPersona.Location = new System.Drawing.Point(429, 3);
+            this.cbIdPersona.Name = "cbIdPersona";
+            this.cbIdPersona.Size = new System.Drawing.Size(121, 21);
+            this.cbIdPersona.TabIndex = 17;
             // 
             // UsuarioDesktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(768, 441);
+            this.ClientSize = new System.Drawing.Size(665, 148);
             this.Controls.Add(this.tlUsuarioDesktop);
             this.Name = "UsuarioDesktop";
             this.Text = "UsuarioDesktop";
@@ -287,6 +297,6 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtConfirmarClave;
         private System.Windows.Forms.TextBox txtClave;
-
+        private System.Windows.Forms.ComboBox cbIdPersona;
     }
 }

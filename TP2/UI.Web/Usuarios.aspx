@@ -42,6 +42,7 @@
             <asp:TextBox ID="repetirClaveTextbox" TextMode="Password" runat="server" ></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvRepetirClave" runat="server" ControlToValidate="repetirClaveTextbox" Display="Dynamic" ErrorMessage="Repetir clave no puede estar en blanco">*</asp:RequiredFieldValidator>
             <asp:CompareValidator ID="cvEmail" runat="server" ControlToCompare="claveTextBox" ControlToValidate="repetirClaveTextbox" Display="Dynamic" ErrorMessage="Las claves no son iguales">Las claves no son iguales</asp:CompareValidator>
+            <asp:ValidationSummary ID="vsUsuarios" runat="server" />
             <br />
         </asp:Panel>
      

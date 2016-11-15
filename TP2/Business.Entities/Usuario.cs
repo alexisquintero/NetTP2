@@ -46,8 +46,6 @@ namespace Business.Entities
            get { return _Habilitado; }
            set { _Habilitado = value; }
        }
-
-       
-       
+        public int idPersona { get; set; }
     }
 }

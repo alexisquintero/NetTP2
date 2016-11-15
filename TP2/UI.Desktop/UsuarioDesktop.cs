@@ -29,6 +29,7 @@ namespace UI.Desktop
             this.txtUsuario.Text = this.UsuarioActual.NombreUsuario;
             this.txtClave.Text = this.UsuarioActual.Clave;
             this.txtConfirmarClave.Text = this.UsuarioActual.Clave;
+            this.llenaComboBox(); cbIdPersona.SelectedValue = this.UsuarioActual.idPersona;
 
             if (Modo == ModoForm.Alta || Modo == ModoForm.Modificacion)
             {
@@ -58,6 +59,7 @@ namespace UI.Desktop
                 this.UsuarioActual.Email = this.txtEmail.Text;
                 this.UsuarioActual.Clave = this.txtClave.Text;
                 this.UsuarioActual.NombreUsuario = this.txtUsuario.Text;
+                this.UsuarioActual.idPersona = (int)this.cbIdPersona.SelectedValue;
             }
             if (Modo == ModoForm.Modificacion)
             {
@@ -113,6 +115,7 @@ namespace UI.Desktop
         public UsuarioDesktop(ModoForm modo) : this()
         {
             Modo = modo;
+            this.llenaComboBox();
         }
         public UsuarioDesktop(int ID, ModoForm modo) : this()
         {
@@ -133,6 +136,12 @@ namespace UI.Desktop
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        private void llenaComboBox()
+        {            
+            cbIdPersona.DataSource = new PersonasLogic().GetAll();
+            cbIdPersona.DisplayMember = "Apellido";
+            cbIdPersona.ValueMember = "ID";
         }
     }
 }

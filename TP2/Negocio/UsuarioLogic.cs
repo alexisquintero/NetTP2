@@ -31,5 +31,28 @@ namespace Business.Logic
         {
             UsuarioData.Delete(ID);
         }
+        public Business.Entities.Personas Ingresar(string usuario, string clave)
+        {
+            List < Usuario > usuarios = this.GetAll();
+            int index = -1;
+            int i = 0;
+            foreach (Usuario u in usuarios)
+            {
+                if (u.NombreUsuario == usuario || u.Clave == clave)
+                {
+                    index = i; 
+                }
+                i++;
+            }
+            if (index == -1)
+            {
+                return null;
+            }
+            else
+            {
+                PersonasLogic pl = new PersonasLogic();
+                return pl.GetOne(usuarios.ElementAt(index).idPersona);
+            }         
+        }
     }
 }
