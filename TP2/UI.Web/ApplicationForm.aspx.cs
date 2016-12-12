@@ -10,8 +10,8 @@ namespace UI.Web
     public partial class ApplicationForm : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-
+        {            
+            
         }
         public enum FormModes
         {
@@ -49,5 +49,12 @@ namespace UI.Web
                 return (this.SelectedID != 0);
             }
         }
+        protected void controlaLogin()
+        {
+            if(Session["p"] == null)
+            {
+                Server.Transfer("~/Login.aspx", true);
+            }
+        }       
     }
 }

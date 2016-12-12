@@ -13,6 +13,7 @@ namespace UI.Web
     {
         protected new void Page_Load(object sender, EventArgs e)
         {
+            this.controlaLogin();
             this.LoadGrid();
         }
         ComisionLogic _logic;

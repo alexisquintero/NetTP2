@@ -33,7 +33,7 @@ namespace UI.Desktop
             Business.Entities.Personas p = new UsuarioLogic().Ingresar(txtUsuario.Text, txtContrasenia.Text);
             if (p == null)
             {
-                MessageBox.Show("Usuarios o contraseña incorrectos");
+                MessageBox.Show("Usuario o contraseña incorrectos");
                 return null;
             }
             return p;

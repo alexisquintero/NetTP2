@@ -90,6 +90,7 @@
             this.txtContrasenia.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtContrasenia.Location = new System.Drawing.Point(73, 29);
             this.txtContrasenia.Name = "txtContrasenia";
+            this.txtContrasenia.PasswordChar = '*';
             this.txtContrasenia.Size = new System.Drawing.Size(100, 20);
             this.txtContrasenia.TabIndex = 3;
             // 

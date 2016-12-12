@@ -13,6 +13,7 @@ namespace UI.Web
     {
         protected new void Page_Load(object sender, EventArgs e)
         {
+            this.controlaLogin();
             this.LoadGrid();
         }
         UsuarioLogic _logic;
@@ -67,6 +68,8 @@ namespace UI.Web
             usuario.NombreUsuario = this.nombreUsuarioTextBox.Text;           
             usuario.Clave = this.claveTextBox.Text;
             usuario.Habilitado = this.habilitadoCheckBox.Checked;
+            Business.Entities.Personas p = (Business.Entities.Personas)Session["p"];
+            usuario.idPersona = p.ID;
         }
         private void SaveEntity(Usuario usuario)
         {
