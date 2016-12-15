@@ -55,6 +55,7 @@ namespace UI.Web
             {
                 Server.Transfer("~/Login.aspx", true);
             }
-        }       
+        }     
+        protected void controlaPermisos() { }  
     }
 }

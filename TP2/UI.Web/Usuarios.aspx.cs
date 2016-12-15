@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Business.Entities;
 using Business.Logic;
+using Util;
 
 namespace UI.Web
 {
@@ -14,6 +15,7 @@ namespace UI.Web
         protected new void Page_Load(object sender, EventArgs e)
         {
             this.controlaLogin();
+            this.controlaPermisos();
             this.LoadGrid();
         }
         UsuarioLogic _logic;
@@ -151,6 +153,14 @@ namespace UI.Web
             this.formPanel.Visible = false;
             this.ViewState["SelectedID"] = null;
             gridView.SelectedIndex = -1;
+        }
+        private new void controlaPermisos()
+        {
+            Personas p = (Personas)Session["p"];
+            if (!ControlAccesoWeb.controlUsuarios(p.TipoPersona))
+            {                
+                Server.Transfer("~/PermisosInsuficientes.aspx", true);
+            }
         }
     }
 }

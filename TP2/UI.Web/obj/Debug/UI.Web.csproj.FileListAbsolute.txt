@@ -58,3 +58,5 @@ I:\UTN\Net\tp\NetTP2\TP2\UI.Web\bin\Data.Database.dll
 I:\UTN\Net\tp\NetTP2\TP2\UI.Web\bin\Business.Entities.pdb
 I:\UTN\Net\tp\NetTP2\TP2\UI.Web\bin\Business.Logic.pdb
 I:\UTN\Net\tp\NetTP2\TP2\UI.Web\bin\Data.Database.pdb
+I:\UTN\Net\tp\NetTP2\TP2\UI.Web\bin\Util.dll
+I:\UTN\Net\tp\NetTP2\TP2\UI.Web\bin\Util.pdb

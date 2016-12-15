@@ -75,6 +75,7 @@
     <Content Include="Especialidades.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Materias.aspx" />
+    <Content Include="PermisosInsuficientes.aspx" />
     <Content Include="Planes.aspx" />
     <Content Include="Profesores.aspx" />
     <Content Include="Site.Master" />
@@ -154,6 +155,13 @@
     <Compile Include="Materias.aspx.designer.cs">
       <DependentUpon>Materias.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PermisosInsuficientes.aspx.cs">
+      <DependentUpon>PermisosInsuficientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PermisosInsuficientes.aspx.designer.cs">
+      <DependentUpon>PermisosInsuficientes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Planes.aspx.cs">
       <DependentUpon>Planes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -192,6 +200,10 @@
     <ProjectReference Include="..\Negocio\Business.Logic.csproj">
       <Project>{0f186eb4-7618-486d-8f85-fe745b674d0d}</Project>
       <Name>Business.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{a3ff2579-f69b-4dc9-bb92-b1bbc927c4f0}</Project>
+      <Name>Util</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
